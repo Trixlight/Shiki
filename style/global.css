@@ -1,17 +1,17 @@
 html {
-    --text-color: #111;
-    --text-color-dim: #333;
-    --text-color-faint: #555;
-    --color-2: whitesmoke;
-    --color-3: #eee;
-    --color-4: #fbfbfb;
-    --color-5: #f3f3f3;
-    --color-6: aliceblue;
-    --page-color: white;
-    --color-green: #b4e8b4;
-    --color-orange: #f3cf8e;
-    --color-red: #fb8c8c;
-    --button-text-color: white;
+  --text-color: #111;
+  --text-color-dim: #333;
+  --text-color-faint: #555;
+  --color-2: whitesmoke;
+  --color-3: #eee;
+  --color-4: #fbfbfb;
+  --color-5: #f3f3f3;
+  --color-6: aliceblue;
+  --page-color: white;
+  --color-green: #b4e8b4;
+  --color-orange: #f3cf8e;
+  --color-red: #fb8c8c;
+  --button-text-color: white;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -40,7 +40,6 @@ html {
     --headline-border-color: #3a3f40!important;
 }
 } */
-
 /* COLORS */
 /* html,
 body,
@@ -90,747 +89,719 @@ button,
     background-color: var(--page-color) !important;
     border-color: var(--headline-border-color) !important;
 } */
-
-.l-top_menu-v2 {
-    position: sticky;
-    top: 0;
-}
-
-.l-top_menu-v2 .menu-icon.forum.desktop {
-    margin-right: 0;
-}
-
-.l-top_menu-v2 .menu-dropdown > span {
-    cursor: pointer;
-}
-
-.l-top_menu-v2 .menu-dropdown.profile {
-    margin-left: 0;
-}
-
-.l-top_menu-v2 .global-search .hotkey-marker {
-    display: none;
-}
-
 /*========Font Family=========*/
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
 }
 
 @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
 }
 
 :root {
-    --font-main: Roboto;
-    --font-alt: Roboto;
-    --font-alt-text-letter-spacing: normal;
+  --font-main: Roboto;
+  --font-alt: Roboto;
+  --font-alt-text-letter-spacing: normal;
 }
 
 /*==============ФОН===============*/
 html {
-  	background-color: #eee;
-    background-image: url(https://i.imgur.com/XEYoTw4.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #eee;
+  background-image: var(--site-bg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 body {
-  	background-color: transparent;
-  	--font-size-base-desktop: 12.5px;
+  background-color: transparent;
+  --font-size-base-desktop: 12.5px;
 }
 
 /*================================================*/
 @media only screen and (min-width: 300px) {
-/*** Font Size ***/
-.b-catalog_entry .cover .misc,
-.p-dashboards-show .midheadline .b-link,
-.p-dashboards .user_list .list-type > .title .switch,
-.p-dashboards .user_list .list-type > .title .link,
-.p-dashboards .user_list .history > .title .switch,
-.p-dashboards .user_list .history > .title .link,
-.p-dashboards .user_list .list-change .note,
-.p-dashboards .c-my_list .list-change .note,
-.bar.vertical .line .x_label,
-.p-dashboards-show .contests .contest .notice,
-.b-forums .forum .topics,
-.p-profiles .profile-head .c-history .entry .misc,
-.b-stats_bar .stat_names,
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a,
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement,
-.b-replies,
-.b-options-floated,
-.p-messages .mass-actions .action,
-.p-animes_collection-index .pagination,
-.p-mangas_collection-index .pagination,
-.p-recommendations-index .pagination,
-.b-user_rate_log .spoiler.collapse span,
-.b-user_rate_log .spoiler.collapsed span,
-.p-userlist_comparer-show .pagination,
-.b-show_more,
-.b-rate .score-notice,
-.bar.horizontal .line .x_label,
-.b-animes-menu .friend-rate .status,
-.bar.horizontal .line .bar-container .value,
-.b-summary_marker::before,
-.b-offtopic_marker::before,
-.b-shiki_editor footer .about-bb_codes,
-.bar.vertical .line .bar-container .value,
-.tipsy,
-header.head .misc,
-header.head a.edit,
-.p-studios .studio .animes,
-.p-studios .studio .years,
-.p-contests .contest-match .vs .help,
-.p-contests .contest-match .vs .next,
-.p-contests .contest-match .vs .finish,
-.p-contests .contest-match .vs .refrain,
-.p-contests .contest-match .vs .refrained,
-.p-contests .match-day .matches-num,
-.b-lang_trigger,
-.b-club .info,
-.b-new_marker::before,
-.b-user.detailed .info .last-online,
-.p-recommendations-index .b-header_filters .hint,
-.p-recommendations-favourites .b-header_filters .hint,
-.p-userlist_comparer .comparer table .notice,
-.p-topics .l-menu .calendar .entry .misc,
-.p-topics .l-menu .critiques .entry .misc,
-.p-topics .l-menu .clubs .entry .misc,
-.p-topics .l-menu .contests .contest .notice,
-.p-topics .l-menu .sticked-topics .topic .notice,
-.date,
-.b-tag,
-.tag-link,
-.b-topic > .inner footer .source,
-.b-user_rate-history .status-counter .status,
-.b-user_rate-history .status-counter .counter span,
-.b-log_entry .spoiler.collapse,
-.b-log_entry .spoiler.collapsed,
-.b-log_entry .spoiler.collapse span,
-.b-log_entry .spoiler.collapsed span,
-.b-js-action,
-.b-input .hint,
-time,
-.status-line,
-.status-line .comments,
-.b-critique-topic .critique-votes_count,
-.b-show_more-more .hide-more,
-.p-dashboard .l-menu .ongoing .misc,
-.p-dashboard .l-menu .season .notice,
-.p-topics .l-menu .sticky-topics .topic .notice,
-.b-hot_topics .topic,
-.b-dialog .to_dialog,
-.p-profiles-show .lifetime .title .value,
-.b-db_entry-note .name-container .b-user_rate .b-add_to_list .trigger,
-.b-db_entry-note .name-container .b-user_rate .b-add_to_list .option,
-.b-animes-menu .total-rates,
-.b-block_list li,
-.b-catalog_entry-tooltip .inner .line,
-.b-catalog_entry-tooltip .b-add_to_list .option,
-.p-profiles .profile-head .c-info .c-additionals div,
-header.head .notice,
-.b-spoiler label,
-.b-topic-preview > .inner .status-line,
-.b-topic > .inner > header .about > span,
-.b-topic > .inner > header .about a,
-.b-nothing_here,
-.b-log_entry .b-critique_votes,
-.p-achievements-global table.statistics tr th,
-input,
-select,
-button,
-textarea,
-.p-db_entries-edit .b-list .sample,
-.b-achievement .c-about .hint, .b-achievement .about .hint,
-.b-achievement .c-about .percent, .b-achievement .about .percent,
-.p-profiles-show .achievements .header .size,
-.b-abuse_marker::before,
-.b-anime_status_tag::before,
-.p-contests .results .cc-result .c-rounds .label,
-.p-contests-grid .round .match a,
-.p-contests-grid .round .match p,
-.p-contests-grid .round .match .matches-num,
-.p-contests-grid .round .match .winner::before,
-.p-contests-grid .round .match .loser::before,
-.p-contests-grid .round .match .finalist::before,
-.b-user.detailed .history .line .event,
-.b-catalog_entry .cover,
-.b-db_entry-variant-list_item > .info .line,
-.b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .trigger,
-.b-db_entry-variant-list_item > .info .b-user_rate .b-add_to_list .option,
-.b-anime_status_tag,
-.misc-links a,
-.image-decor > .text,
-.episodes_total,
-.time,
-.watch-online .kind {
+
+  /*** Font Size ***/
+  .b-catalog_entry .cover .misc,
+  .p-dashboards-show .midheadline .b-link,
+  .p-dashboards .user_list .list-type>.title .switch,
+  .p-dashboards .user_list .list-type>.title .link,
+  .p-dashboards .user_list .history>.title .switch,
+  .p-dashboards .user_list .history>.title .link,
+  .p-dashboards .user_list .list-change .note,
+  .p-dashboards .c-my_list .list-change .note,
+  .bar.vertical .line .x_label,
+  .p-dashboards-show .contests .contest .notice,
+  .b-forums .forum .topics,
+  .p-profiles .profile-head .c-history .entry .misc,
+  .b-stats_bar .stat_names,
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a,
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement,
+  .b-replies,
+  .b-options-floated,
+  .p-messages .mass-actions .action,
+  .p-animes_collection-index .pagination,
+  .p-mangas_collection-index .pagination,
+  .p-recommendations-index .pagination,
+  .b-user_rate_log .spoiler.collapse span,
+  .b-user_rate_log .spoiler.collapsed span,
+  .p-userlist_comparer-show .pagination,
+  .b-show_more,
+  .b-rate .score-notice,
+  .bar.horizontal .line .x_label,
+  .b-animes-menu .friend-rate .status,
+  .bar.horizontal .line .bar-container .value,
+  .b-summary_marker::before,
+  .b-offtopic_marker::before,
+  .b-shiki_editor footer .about-bb_codes,
+  .bar.vertical .line .bar-container .value,
+  .tipsy,
+  .b-contest_match .vs .invitation, .b-contest_match .vs .vote-voted, .b-contest_match .vs .vote-abstained, .b-contest_match .vs .thanks, .b-contest_match .vs .hint, .b-contest_match .vs .action, .b-contest_match .vs .not-selected,
+  header.head .misc,
+  header.head a.edit,
+  .p-studios .studio .animes,
+  .p-studios .studio .years,
+  .p-contests .contest-match .vs .help,
+  .p-contests .contest-match .vs .next,
+  .p-contests .contest-match .vs .finish,
+  .p-contests .contest-match .vs .refrain,
+  .p-contests .contest-match .vs .refrained,
+  .p-contests .match-day .matches-num,
+  .b-lang_trigger,
+  .b-club .info,
+  .b-new_marker::before,
+  .b-user.detailed .info .last-online,
+  .p-recommendations-index .b-header_filters .hint,
+  .p-recommendations-favourites .b-header_filters .hint,
+  .p-userlist_comparer .comparer table .notice,
+  .p-topics .l-menu .calendar .entry .misc,
+  .p-topics .l-menu .critiques .entry .misc,
+  .p-topics .l-menu .clubs .entry .misc,
+  .p-topics .l-menu .contests .contest .notice,
+  .p-topics .l-menu .sticked-topics .topic .notice,
+  .date,
+  .b-tag,
+  .tag-link,
+  .b-topic>.inner footer .source,
+  .b-user_rate-history .status-counter .status,
+  .b-user_rate-history .status-counter .counter span,
+  .b-log_entry .spoiler.collapse,
+  .b-log_entry .spoiler.collapsed,
+  .b-log_entry .spoiler.collapse span,
+  .b-log_entry .spoiler.collapsed span,
+  .b-js-action,
+  .b-input .hint,
+  time,
+  .status-line,
+  .status-line .comments,
+  .b-critique-topic .critique-votes_count,
+  .b-show_more-more .hide-more,
+  .p-dashboard .l-menu .ongoing .misc,
+  .p-dashboard .l-menu .season .notice,
+  .p-topics .l-menu .sticky-topics .topic .notice,
+  .b-hot_topics .topic,
+  .b-dialog .to_dialog,
+  .p-profiles-show .lifetime .title .value,
+  .b-db_entry-note .name-container .b-user_rate .b-add_to_list .trigger,
+  .b-db_entry-note .name-container .b-user_rate .b-add_to_list .option,
+  .b-animes-menu .total-rates,
+  .b-block_list li,
+  .b-catalog_entry-tooltip .inner .line,
+  .b-catalog_entry-tooltip .b-add_to_list .option,
+  .p-profiles .profile-head .c-info .c-additionals div,
+  header.head .notice,
+  .b-spoiler label,
+  .b-topic-preview>.inner .status-line,
+  .b-topic>.inner>header .about>span,
+  .b-topic>.inner>header .about a,
+  .b-nothing_here,
+  .b-log_entry .b-critique_votes,
+  .p-achievements-global table.statistics tr th,
+  input,
+  select,
+  button,
+  textarea,
+  .b-ban .duration,
+  .p-db_entries-edit .b-list .sample,
+  .b-achievement .c-about .hint, .b-achievement .about .hint,
+  .b-achievement .c-about .percent, .b-achievement .about .percent,
+  .p-profiles-show .achievements .header .size,
+  .b-abuse_marker::before,
+  .b-anime_status_tag::before,
+  .p-contests .results .cc-result .c-rounds .label,
+  .p-contests-grid .round .match a,
+  .p-contests-grid .round .match p,
+  .p-contests-grid .round .match .matches-num,
+  .p-contests-grid .round .match .winner::before,
+  .p-contests-grid .round .match .loser::before,
+  .p-contests-grid .round .match .finalist::before,
+  .b-user.detailed .history .line .event,
+  .b-catalog_entry .cover,
+  .b-db_entry-variant-list_item>.info .line,
+  .b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .trigger,
+  .b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .option,
+  .b-anime_status_tag,
+  .misc-links a,
+  .image-decor>.text,
+  .episodes_total,
+  .time,
+  .watch-online .kind,
+  .comments-collapser,
+  .votes-for,
+  .votes-against,
+  .to-review,
+  .user-rate-label,
+  .review-info .label {
     font-size: 12.5px !important;
-}
+  }
 
-.b-breadcrumbs,
-.b-catalog_entry-tooltip .inner .text,
-.p-anime_videos-index .c-video_stats,
-.subheadline .misc-link {
+  .b-breadcrumbs,
+  .b-catalog_entry-tooltip .inner .text,
+  .p-anime_videos-index .c-video_stats,
+  .subheadline .misc-link {
     font-size: 13px !important;
-}
+  }
 
-.b-catalog_entry-tooltip .inner a.name,
-.b-link_button,
-.p-contests-show .b-catalog_entry .cover .title {
+  .b-catalog_entry-tooltip .inner a.name,
+  .b-link_button,
+  .p-contests-show .b-catalog_entry .cover .title {
     font-size: 13.5px !important;
-}
+  }
 
-.b-stats_bar a.title,
-.b-stats_bar .title {
+  .b-stats_bar a.title,
+  .b-stats_bar .title {
     font-size: 14px;
     margin-bottom: 3px;
-}
+  }
 
-.mfp-close {
+  .mfp-close {
     font-size: 28px !important;
-}
- 
-.p-user_rates-index .stat-categories .t0 {
+  }
+
+  .p-user_rates-index .stat-categories .t0 {
     font-size: 12px !important;
-}
-  
-.p-user_rates-index .stat-categories .t1 {
+  }
+
+  .p-user_rates-index .stat-categories .t1 {
     font-size: 13px !important;
-}
-  
-.p-user_rates-index .stat-categories .t2 {
+  }
+
+  .p-user_rates-index .stat-categories .t2 {
     font-size: 14px !important;
-}
-  
-.p-user_rates-index .stat-categories .t3 {
+  }
+
+  .p-user_rates-index .stat-categories .t3 {
     font-size: 15px !important;
-  	font-weight: bold;
-}
-  
-.p-user_rates-index .stat-categories .t4 {
+    font-weight: bold;
+  }
+
+  .p-user_rates-index .stat-categories .t4 {
     font-size: 16px !important;
-  	text-transform: uppercase;
-}
+    text-transform: uppercase;
+  }
 
-/*==============Fixes==================*/
-.b-forums .forum .topics {
+  /*==============Fixes==================*/
+  .b-forums .forum .topics {
     margin-top: 0;
-}
+  }
 
-.b-replies {
+  .b-replies {
     padding-top: 0;
-}
+  }
 
-.b-options-floated {
+  .b-options-floated {
     line-height: normal;
-}
+  }
 
-.subheadline .count::after {
+  .subheadline .count::after {
     float: none;
-}
+  }
 
-.b-catalog-entry-embedded > .b-catalog_entry-tooltip .b-add_to_list {
+  .b-catalog-entry-embedded>.b-catalog_entry-tooltip .b-add_to_list {
     min-width: 100px !important;
     max-width: 196px !important;
     width: auto !important;
-}
+  }
 
-.tipsy-inner {
+  .tipsy-inner {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     background-color: #232323;
     opacity: 1;
-}
+  }
 
-a[title="к манге"] {
+  a[title="к манге"] {
     display: none !important;
-}
+  }
 
-.b-video .marker,
-.b-video .name {
+  .b-video .marker,
+  .b-video .name {
     color: #ffffff;
     background: black;
     font-size: 12.5px;
-}
+  }
 
-button.mfp-arrow,
-button.mfp-close {
+  button.mfp-arrow,
+  button.mfp-close {
     z-index: 10;
-}
+  }
 
-.mfp-arrow-left {
+  .mfp-arrow-left {
     z-index: 2222 !important;
-}
+  }
 
-.mfp-arrow {
+  .mfp-arrow {
     top: 0;
     margin-top: 0;
     width: 40%;
     height: 100%;
-}
+  }
 
-.mfp-close {
+  .mfp-close {
     z-index: 9999 !important;
     height: 100%;
     margin-top: -60%;
-}
+  }
 
-.mfp-arrow:after,
-.mfp-arrow:before,
-.b-video a.video-link:before {
+  .mfp-arrow:after,
+  .mfp-arrow:before,
+  .b-video a.video-link:before {
     display: none;
-}
+  }
 
-.mfp-arrow:active {
+  .mfp-arrow:active {
     margin-top: 0;
-}
+  }
 
-.CodeMirror-fullscreen {
-    top: 50px;
-}
-
-.headline > a,
-.midheadline > a,
-.subheadline > a {
+  .headline>a,
+  .midheadline>a,
+  .subheadline>a {
     overflow: visible;
-}
+  }
 
-.headline,
-.midheadline,
-.subheadline {
+  /************************************************************/
+  .headline,
+  .midheadline,
+  .subheadline {
     line-height: 1;
     padding: 10px;
     border-radius: 3px;
-}
+  }
 
-.b-reviews_navigation .navigation-container {
+  .b-reviews_navigation .navigation-container {
     height: 35px;
     line-height: 35px;
-}
+  }
 
-.b-reviews_navigation .navigation-node-all {
+  .b-reviews_navigation .navigation-node-all {
     border-left: 5px solid var(--headline-border-color);
     color: var(--link-color);
     padding-top: 0 !important;
     border-radius: 3px 0 0 3px;
-}
-    
-.b-reviews_navigation .navigation-node-negative {
+  }
+
+  .b-reviews_navigation .navigation-node-negative {
     border-radius: 0 3px 3px 0;
-}
+  }
 
-.b-reviews_navigation .navigation-node-all:hover {
+  .b-reviews_navigation .navigation-node-all:hover {
     color: var(--link-hover-color);
-}
+  }
 
-.b-reviews_navigation .navigation-node .count {
+  .b-reviews_navigation .navigation-node .count {
     font-size: 15px;
     font-weight: 600;
-}
+  }
 
-.p-user_rates-index .l-content .order-control.active {
+  .p-user_rates-index .l-content .order-control.active {
     text-decoration: none;
-}
+  }
 
-.subheadline-buttons {
+  .subheadline-buttons {
     margin-top: 4px;
-}
+  }
 
-.p-dashboards-show .midheadline .b-link {
+  .p-dashboards-show .midheadline .b-link {
     line-height: normal;
     vertical-align: bottom;
-}
+  }
 
-.b-animes-menu #rates_statuses_stats .bar-container {
+  .b-animes-menu #rates_statuses_stats .bar-container {
     margin-right: 100px;
-}
+  }
 
-.b-club .info {
+  .b-club .info {
     display: block;
     padding: 5px 0 0;
-}
+  }
 
-.b-club_page-topic {
+  .b-club_page-topic {
     margin-bottom: 5px !important;
     padding-top: 10px;
-}
+  }
 
-.b-catalog_entry-tooltip .inner .rating .text {
+  .b-catalog_entry-tooltip .inner .rating .text {
     font-size: 13px;
     margin: 0 5px 10px;
-}
+  }
 
-.b-animes-menu .menu-topics-block .name {
+  .b-animes-menu .menu-topics-block .name {
     padding-right: 3px;
-}
+  }
 
-/*** -----  ***/
-.b-height_shortener {
-    display: none;
-}
-
-.shortened {
-    height: auto !important;
-    overflow: visible;
-}
-
-.b-lang_trigger {
+  /*** -----  ***/
+  .b-lang_trigger {
     z-index: 10;
     position: relative;
-}
+  }
 
-/************/
-.b-db_entry .simple_form.b-form.rate-edit{
+  /************/
+  .b-db_entry .simple_form.b-form.rate-edit {
     background: whitesmoke;
     border-radius: 3px;
     padding: 10px;
-}
-  
-  
-/*** ----- ***/
-.b-catalog_entry.in_list img {
+  }
+
+  /*** ----- ***/
+  .b-catalog_entry.in_list img {
     opacity: 0.5;
-}
+  }
 
-.b-catalog_entry.in_list img:Hover {
+  .b-catalog_entry.in_list img:Hover {
     opacity: 1;
-}
+  }
 
-.completed img,
-.on_hold img,
-.watching img,
-.planned img {
+  .completed img,
+  .on_hold img,
+  .watching img,
+  .planned img {
     opacity: 0.4;
-}
+  }
 
-.complete d img:Hover,
-.on_hold img:Hover,
-.watching img:Hover,
-.planned img:Hover {
+  .complete d img:Hover,
+  .on_hold img:Hover,
+  .watching img:Hover,
+  .planned img:Hover {
     opacity: 1;
-}
+  }
 
-/*** Rounded Avatars ***/
-.b-user.avatar img,
-.b-user.named_avatar img,
-.b-user.avatar_fixed_margin img,
-.b-user16 img,
-.b-club .logo,
-.b-comment > .inner header img,
-.menu .avatar,
-div.avatar img,
-.p-profiles-edit .account .avatar-edit img,
-.b-user.detailed .info .image-name .image,
-.b-message > .inner header img,
-.b-hot_topics .topic a.with-author img,
-.b-dialog > .inner header img,
-.b-hot_topics .topic a .poster,
-.p-topics .l-menu .clubs .entry img,
-.ac_results.menu-suggest li div.name img,
-header a[href*="forum"] img[src*="user"],
-.submenu-triangle.icon-avatar img,
-.menu-dropdown.profile img,
-.b-review > .inner header .author-link img,
-.b-user.detailed .info .image-name .image,
-.b-user.moderation .info .image-name .image {
-    border-radius: 50%;
-}
+  /*** Rounded Avatars ***/
+  .b-user.avatar img,
+  .b-user.named_avatar img,
+  .b-user.avatar_fixed_margin img,
+  .b-user16 img,
+  .b-club .logo,
+  .b-comment>.inner header img,
+  .menu .avatar,
+  div.avatar img,
+  .p-profiles-edit .account .avatar-edit img,
+  .b-user.detailed .info .image-name .image,
+  .b-message>.inner header img,
+  .b-hot_topics .topic a.with-author img,
+  .b-dialog>.inner header img,
+  .b-hot_topics .topic a .poster,
+  .p-topics .l-menu .clubs .entry img,
+  .ac_results.menu-suggest li div.name img,
+  header a[href*="forum"] img[src*="user"],
+  .submenu-triangle.icon-avatar img,
+  .menu-dropdown.profile img,
+  .b-topic>.inner header img,
+  .b-review>.inner header .author-link img,
+  .b-user.detailed .info .image-name .image,
+  .b-user.moderation .info .image-name .image,
+  .user_rates-minified .b-catalog_entry .image-decor::before {
+    border-radius: 50% !important;
+  }
 
-.b-user.detailed .info .image-name .image,
-.b-user.moderation .info .image-name .image {
+  .b-user.detailed .info .image-name .image,
+  .b-user.moderation .info .image-name .image {
     padding: 0;
-}
+  }
 
-/*** mfp-bg ***/
-.mfp-bg {
+  /*** mfp-bg ***/
+  .mfp-bg {
     opacity: 1;
-}
+  }
 
-/* Go To Top */
-.b-to-top.active .slide,
-.to-top-fix,
-.b-to-top,
-.b-to-top .arrow {
+  /* Go To Top */
+  .b-to-top.active .slide,
+  .to-top-fix,
+  .b-to-top,
+  .b-to-top .arrow {
     display: none;
-}
+  }
 
-/*** Feedback ***/
-.b-feedback {
+  /*** Feedback ***/
+  .b-feedback {
     display: none;
-}
+  }
 
-.b-options-floated {
+  .b-options-floated {
     margin-top: 10px;
-}
+  }
 
-/*** Hot Topics ***/
-.b-hot_topics {
+  /*** Hot Topics ***/
+  .b-hot_topics {
     background-color: transparent;
     border-bottom: 0;
     margin: 0 0 15px;
     padding: 0;
     overflow-y: hidden;
     height: 30px;
-}
+  }
 
-.b-hot_topics .topic {
+  .b-hot_topics .topic {
     margin-right: 5px;
     width: auto;
     background: #e8ebef;
     padding: 7px 10px;
     border-radius: 25px;
     max-width: 15%;
-}
+  }
 
-.b-hot_topics .topic.subject {
+  .b-hot_topics .topic.subject {
     padding: 9px;
     background: tan;
-}
+  }
 
-.b-hot_topics .topic a .poster {
+  .b-hot_topics .topic a .poster {
     margin-top: 0px;
     border-radius: 50%;
-}
+  }
 
-/*** Options Page ***/
-.b-input.boolean {
+  /*** Options Page ***/
+  .b-input.boolean {
     display: table;
-}
+  }
 
-/*** Ads ***/
-.b-sponsors_block_3 {
+  /*** Ads ***/
+  .b-sponsors_block_3 {
     display: none !important;
-}
+  }
 
-/*** Back Arrow ***/
-header.head h1 a.back::after,
-header.head h2 a.back::after {
+  /*** Back Arrow ***/
+  header.head h1 a.back::after,
+  header.head h2 a.back::after {
     display: none;
-}
+  }
 
-header.head h1 a.back::before,
-header.head h2 a.back::before {
+  header.head h1 a.back::before,
+  header.head h2 a.back::before {
     left: 6px;
     top: -28px;
-}
+  }
 
-/*** Comments Fix ****/
-.b-comment {
+  /*** Comments Fix ****/
+  .b-comment {
     margin-bottom: 10px;
     padding-top: 10px;
-}
+  }
 
-.b-comment:first-child {
-    border-top-width: 0 !important;
-}
+  .b-comment:first-child {
+    border-top-width: 1px !important;
+    padding-top: 10px !important;
+  }
 
-.b-comment .inner {
+  .b-comment .inner {
     min-height: 50px;
-}
+  }
 
-.b-comment > .inner header img {
+  .b-comment>.inner header img {
     margin: 0 10px 0 0;
-}
+  }
 
-.b-comment > .inner header .name-date {
+  .b-comment>.inner header .name-date {
     overflow: visible;
-}
+  }
 
-.b-quote {
+  .b-quote {
     margin: 5px 0;
-}
+  }
 
-.b-comment > .inner div.body,
-.b-message > .inner div.body {
+  .b-comment>.inner div.body,
+  .b-message>.inner div.body {
     margin-left: 58px;
-}
+  }
 
-.b-dialog > .inner div.body {
+  .b-dialog>.inner div.body {
     margin-left: 58px;
-}
+  }
 
-.b-dialog > .inner div.body .inner div.body {
+  .b-dialog>.inner div.body .inner div.body {
     margin-left: 40px;
-}
+  }
 
-.b-replies {
+  .b-replies {
     clear: none;
     padding-top: 0;
-}
+  }
 
-/*** Quotes ***/
-.b-quote {
+  /*** Quotes ***/
+  .b-quote {
     font-style: normal;
     border-radius: 3px;
-}
+  }
 
-/*** Content Transparent Border Fix ***/
-.l-page::before,
-.l-page::after,
-.l-footer::before,
-.l-footer::after {
+  /*** Content Transparent Border Fix ***/
+  .l-page::before,
+  .l-page::after,
+  .l-footer::before,
+  .l-footer::after {
     display: none !important;
-}
+  }
 
-/*** Main Page Fixes ***/
-.p-dashboards-show .cc-ongoings,
-.p-dashboards-show .cc-second {
+  /*** Main Page Fixes ***/
+  .p-dashboards-show .cc-ongoings,
+  .p-dashboards-show .cc-second {
     margin-bottom: 45px;
-}
+  }
 
-.b-link_button.maxi,
-.create-topic {
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-.p-dashboards .animes .others,
-.p-dashboards .mangas .others {
+  .p-dashboards .animes .others,
+  .p-dashboards .mangas .others {
     margin-top: 10px;
-}
+  }
 
-.b-forums div.block {
+  .b-forums div.block {
     padding: 0px 5px;
-}
+  }
 
-.p-dashboards-show .c-my_list {
+  .p-dashboards-show .c-my_list {
     padding: 5px 10px;
-}
+  }
 
-.p-dashboards-show .cc-news .c-news_topics {
+  .p-dashboards-show .cc-news .c-news_topics {
     margin-right: 4%;
     width: 65.667%;
-}
+  }
 
-.p-dashboards-show .cc-news .c-news_topics .b-topic {
+  .p-dashboards-show .cc-news .c-news_topics .b-topic {
     border-top-width: 1px;
     padding-top: 10px;
-}
+  }
 
-.p-dashboards-show .cc-news .c-news_topics .b-topic {
+  .p-dashboards-show .cc-news .c-news_topics .b-topic {
     margin-bottom: 30px;
-}
+  }
 
-.p-dashboards-show .cc-news .c-generated_news .b-topic {
+  .p-dashboards-show .cc-news .c-generated_news .b-topic {
     margin-bottom: 5px;
-}
+  }
 
-.c-generated_news div.block {
+  .c-generated_news div.block {
     margin-bottom: 15px;
-}
+  }
 
-.headline.linkheadline > a,
-.linkheadline.midheadline > a,
-.linkheadline.subheadline > a {
+  .headline.linkheadline>a,
+  .linkheadline.midheadline>a,
+  .linkheadline.subheadline>a {
     text-decoration: none;
-}
+  }
 
-.headline.linkheadline > a:hover,
-.linkheadline.midheadline > a:hover,
-.linkheadline.subheadline > a:hover {
+  .headline.linkheadline>a:hover,
+  .linkheadline.midheadline>a:hover,
+  .linkheadline.subheadline>a:hover {
     text-decoration: underline;
-}
+  }
 
-.subheadline-input {
+  .subheadline-input {
     padding: 4px 0 4px 5px;
-}
+  }
 
-.b-critique-topic.mini {
-    margin-bottom: 20px;
-}
-
-/*** Reviews ***/
-.b-topic.b-critique-topic > .inner header img {
-    border-radius: 50%;
-}
-
-.critique-votes_count {
-    margin-bottom: 20px;
-}
-
-.b-topic.b-critique-topic > .inner header .name {
+  .b-topic.b-critique-topic>.inner header .name {
     margin-top: 7px;
     display: inline-block;
-}
+  }
 
-.bar.horizontal .line .bar-container .bar.min {
+  .bar.horizontal .line .bar-container .bar.min {
     border-radius: 2px;
     height: 20px;
-}
+  }
 
-.bar.horizontal .line .x_label,
-.bar.horizontal .line .bar-container .value {
+  .bar.horizontal .line .x_label,
+  .bar.horizontal .line .bar-container .value {
     line-height: 20px;
-}
+  }
 
-/*** ***/
-#toast-container {
+  /*** ***/
+  #toast-container {
     top: 65px !important;
-}
+  }
 
-/*** Buttons ***/
-input[type="submit"],
-input[type="text"],
-input[type="email"],
-input[type="number"],
-.b-offtopic_marker::before,
-.b-summary_marker::before,
-.b-new_marker::before,
-.b-abuse_marker::before,
-.b-anime_status_tag::before,
-.b-anime_status_tag,
-.b-add_to_list .trigger,
-.watch-online .b-link_button,
-.b-input select,
-.b-input textarea,
-.ProseMirror {
+  /*** Buttons ***/
+  input[type="submit"],
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  .b-offtopic_marker::before,
+  .b-summary_marker::before,
+  .b-new_marker::before,
+  .b-abuse_marker::before,
+  .b-anime_status_tag::before,
+  .b-anime_status_tag,
+  .b-add_to_list .trigger,
+  .watch-online .b-link_button,
+  .b-input select,
+  .b-input textarea,
+  .ProseMirror,
+  .tooltip-inner,
+  .cc-achievements .b-achievement,
+  .b-achievement .c-image .inner a .border,
+  .b-achievement .c-image .inner a img,
+  .b-achievement .c-image .inner a .no-image,
+  .b-spoiler_block>span,
+  .b-footer_vote,
+  .create-topic,
+  .to-other-reviews,
+  .b-comments .comments-loader,
+  .b-comments .comments-hider,
+  .b-comments .comments-expander,
+  .opinion {
     border-radius: 3px;
-}
-  
-.b-add_to_list.expanded .trigger {
+  }
+
+  .b-add_to_list.expanded .trigger {
     border-radius: 3px 3px 0 0;
-}
-  
-.b-add_to_list .expanded-options  {
+  }
+
+  .b-add_to_list .expanded-options {
     border-radius: 0 0 3px 3px;
-}
-  
-input, select, textarea {
-    border-color: #ccc!important;
-}
-  
-.b-input select {
-  	font-family: Roboto, Sans-Serif;
+  }
+
+  input, select, textarea {
+    border-color: #ccc !important;
+  }
+
+  .b-input select {
+    font-family: Roboto, Sans-Serif;
     padding: 5px 7px;
-}
-  
-.b-input label,
-.b-block_list li {
+  }
+
+  .b-input label,
+  .b-block_list li {
     display: flex !important;
     align-items: center !important;
-}
+  }
 
-input[type="checkbox"] {
+  input[type="checkbox"] {
     margin: 0 6px 0 0 !important;
     width: 18px !important;
     height: 18px !important;
@@ -839,16 +810,16 @@ input[type="checkbox"] {
     border: 1px solid #ddd !important;
     border-radius: 3px !important;
     background-color: #fcfcfc !important;
-  	position: relative;
-}
+    position: relative;
+  }
 
-:is(li, label):hover input[type="checkbox"],
-input[type="checkbox"]:hover {
+  :is(li, label):hover input[type="checkbox"],
+  input[type="checkbox"]:hover {
     background-color: #eee !important;
-}
+  }
 
-input[type="checkbox"]:checked::after,
-li.selected input[type="checkbox"]::after {
+  input[type="checkbox"]:checked::after,
+  li.selected input[type="checkbox"]::after {
     content: '';
     display: list-item !important;
     position: absolute !important;
@@ -860,84 +831,84 @@ li.selected input[type="checkbox"]::after {
     list-style-position: inside !important;
     top: 0 !important;
     left: 0 !important;
-}
+  }
 
-/*============Content==============*/
-.l-page {
+  /*============Content==============*/
+  .l-page {
     min-height: 500px;
     position: relative;
     padding: 15px !important;
     margin: 15px auto 15px;
     border-radius: 3px;
-}
+  }
 
-.l-footer {
+  .l-footer {
     display: none !important;
-}
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-.l-page {
+  .l-page {
     min-height: 500px;
     position: relative;
     padding: 15px !important;
     margin: 0 auto;
     border-radius: 0;
-}
+  }
 }
 
 /*==========ФИКСЫ ДЛЯ МОБИЛКИ==========*/
 @media only screen and (min-width: 300px) and (max-width: 1024px) {
-.x1000 .b-db_entry > .c-about {
+  .x1000 .b-db_entry>.c-about {
     width: 70.5%;
-}
+  }
 
-.x1000 .b-db_entry > .c-image {
+  .x1000 .b-db_entry>.c-image {
     width: 25.5%;
-}
+  }
 
-.x1000 .b-db_entry > .c-description {
+  .x1000 .b-db_entry>.c-description {
     margin-left: 29.5%;
-}
+  }
 
-.x1000 .l-page {
+  .x1000 .l-page {
     margin: 65px 15px 15px;
-}
+  }
 
-.l-top_menu .menu-mobile {
+  .l-top_menu .menu-mobile {
     margin: 9px;
-}
+  }
 
-.l-top_menu .menu-mobile .menu,
-.l-top_menu .menu-mobile .search {
+  .l-top_menu .menu-mobile .menu,
+  .l-top_menu .menu-mobile .search {
     color: #333;
-}
+  }
 
-.l-top_menu .mobile-menu-toggler.active,
-.l-top_menu .mobile-search-toggler.active {
+  .l-top_menu .mobile-menu-toggler.active,
+  .l-top_menu .mobile-search-toggler.active {
     background: #e8ebef;
-}
+  }
 
-.l-top_menu .menu-userbox {
+  .l-top_menu .menu-userbox {
     margin: -5px -20px 0;
-}
+  }
 
-.l-top_menu .to-mobile-forum {
+  .l-top_menu .to-mobile-forum {
     margin: 10px 10px 10px 30px !important;
     color: #404040;
-}
+  }
 
-.l-page .menu-toggler {
+  .l-page .menu-toggler {
     position: fixed;
     right: 18px;
     top: 68px;
-}
+  }
 
-.b-comments-notifier {
+  .b-comments-notifier {
     display: none !important;
-}
+  }
 
-.l-top_menu .menu-items {
+  .l-top_menu .menu-items {
     right: 5px;
     width: 220px;
     position: fixed;
@@ -945,150 +916,161 @@ li.selected input[type="checkbox"]::after {
     background: #fff;
     padding: 5px;
     box-shadow: 0px 5px 30px 0 rgba(17, 17, 17, .2);
-}
+  }
 
-.l-top_menu .menu-items > .entry > a {
+  .l-top_menu .menu-items>.entry>a {
     height: 35px;
     line-height: 35px;
     margin-right: 50px;
     overflow: hidden;
-}
+  }
 
-.l-top_menu .menu-items > .entry > a:hover,
-.l-top_menu .menu-items .submenu-toggler:hover,
-.l-top_menu .inner .sign_out:hover {
+  .l-top_menu .menu-items>.entry>a:hover,
+  .l-top_menu .menu-items .submenu-toggler:hover,
+  .l-top_menu .inner .sign_out:hover {
     background: #e8ebef;
-}
+  }
 
-.l-top_menu .menu-items .submenu-toggler {
+  .l-top_menu .menu-items .submenu-toggler {
     right: 0;
     color: #333;
-}
+  }
 
-.l-top_menu .menu-items .submenu-toggler:before {
+  .l-top_menu .menu-items .submenu-toggler:before {
     width: 50px;
-}
+  }
 
-.l-page .menu-toggler .toggler {
+  .l-page .menu-toggler .toggler {
     padding-bottom: 15px;
     padding-top: 15px;
-}
+  }
 
-.l-top_menu .menu-items .submenu-toggler:before {
+  .l-top_menu .menu-items .submenu-toggler:before {
     line-height: 32px;
-}
+  }
 
-.l-page .menu-toggler .toggler:before {
+  .l-page .menu-toggler .toggler:before {
     display: none;
-}
+  }
 
-.l-top_menu .menu-items > .entry > .submenu {
+  .l-top_menu .menu-items>.entry>.submenu {
     opacity: 1;
     visibility: visible;
     margin-left: 0;
     padding-left: 0;
     background: transparent;
     box-shadow: none;
-}
+  }
 
-.l-top_menu .entry {
+  .l-top_menu .entry {
     border-top: 0;
-}
+  }
 
-.l-top_menu .menu-items > .entry.calendar > a,
-.l-top_menu .menu-items > .entry.info > a {
+  .l-top_menu .menu-items>.entry.calendar>a,
+  .l-top_menu .menu-items>.entry.info>a {
     padding: 0 10px 0;
     background-image: none;
     opacity: 1;
     margin-left: -10px !important;
     margin-right: 50px !important;
-}
+  }
 
-.l-top_menu .menu-items > .entry.info > a:before {
+  .l-top_menu .menu-items>.entry.info>a:before {
     color: #333;
     font-size: 14px !important;
     opacity: 1;
     background-color: transparent;
-}
+  }
 
-.l-top_menu .menu-items > .entry.calendar > a:before,
-.l-top_menu .menu-items > .entry > .contest::before {
+  .l-top_menu .menu-items>.entry.calendar>a:before,
+  .l-top_menu .menu-items>.entry>.contest::before {
     visibility: visible;
-}
+  }
 
-.l-top_menu .inner .sign_out {
+  .l-top_menu .inner .sign_out {
     display: none;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     color: #333;
-}
+  }
 
-.l-top_menu .menu-search.active {
+  .l-top_menu .menu-search.active {
     width: 220px !important;
     top: -34px !important;
     position: fixed !important;
     right: 95px !important;
-}
+  }
 
-.ac_results.menu-suggest {
+  .ac_results.menu-suggest {
     top: 65px !important;
-}
+  }
 
-.c-lists-info .b-stats_bar:first-child {
+  .c-lists-info .b-stats_bar:first-child {
     margin-right: 6px;
-}
+  }
 
-.c-lists-info .b-stats_bar .stat_names .stat_name a {
+  .c-lists-info .b-stats_bar .stat_names .stat_name a {
     height: 17px;
     overflow: hidden;
     word-break: break-all;
-}
+  }
 
-.l-top_menu .inner .logo {
+  .l-top_menu .inner .logo {
     margin: 0 0 0 20px;
-}
+  }
 
-.p-dashboards-show .cc-news .c-news_topics {
+  .p-dashboards-show .cc-news .c-news_topics {
     margin-right: 2%;
     width: 60.667%;
     overflow: hidden;
-}
+  }
 
-.b-add_to_list {
+  .b-add_to_list {
     min-width: auto;
-}
+  }
 }
 
+/**********************************************************/
 .l-top_menu-v2 {
-    background-color: #242627;
+  position: sticky;
+  top: 0;
+  background-color: #242627;
 }
 
 .l-top_menu-v2 .global-search {
-    max-width: 500px;
-    margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 /* Hide Search Field */
 .l-top_menu-v2 .menu-icon.search.mobile {
-    display: block;
-    margin-left: auto;
-    order: 2;
+  display: block;
+  margin-left: auto;
+  order: 2;
 }
 
 .l-top_menu-v2:not(.is-search-mobile) .global-search {
-    display: none;
+  display: none;
 }
 
 .l-top_menu-v2.is-search-focus .global-search {
-    display: block;
-    order: 1;
+  display: block;
+  order: 1;
 }
 
 .l-top_menu-v2 .menu-icon.sign_in,
 .l-top_menu-v2 .menu-dropdown.profile {
-    order: 3;
+  order: 3;
   background: #3e3e3e;
+}
+
+.l-top_menu-v2 .menu-dropdown.profile {
+  margin-left: 0;
+}
+
+.l-top_menu-v2 .menu-icon.mail {
+  order: 3;
 }
 
 /* Search Results Hover */
@@ -1098,25 +1080,25 @@ li.selected input[type="checkbox"]::after {
 .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item:focus,
 .l-top_menu-v2 .global-search .search-results .search-mode.active,
 .l-top_menu-v2 .global-search .search-results .search-mode:focus {
-    background: var(--color-3);
-    border-color: var(--color-3)!important;
+  background: var(--color-3);
+  border-color: var(--color-3) !important;
 }
 
 /* Colors */
 l-top_menu-v2 .global-search .search-results .nothing_found,
 .l-top_menu-v2 .global-search .search-results .b-db_entry-variant-list_item,
 .l-top_menu-v2 .global-search .search-results .search-mode {
-    border-color: var(--color-3)!important;
+  border-color: var(--color-3) !important;
 }
 
 .l-top_menu-v2 .global-search input {
-    background: var(--page-color);
-    color: var(--text-color-dim);
+  background: var(--page-color);
+  color: var(--text-color-dim);
 }
 
 .l-top_menu-v2 .global-search .search-results {
-    background: var(--page-color);
-    color: var(--text-color-dim);
+  background: var(--page-color);
+  color: var(--text-color-dim);
 }
 
 .l-top_menu-v2 .global-search,
@@ -1124,170 +1106,170 @@ l-top_menu-v2 .global-search .search-results .nothing_found,
 .l-top_menu-v2 .global-search .clear,
 .l-top_menu-v2 .global-search .search-results .nothing_found,
 .l-top_menu-v2 .global-search .search-results .search-mode {
-    color: var(--text-color-dim);
+  color: var(--text-color-dim);
 }
 
 /* Rounded Corners */
 .l-top_menu-v2 .global-search input {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 .l-top_menu-v2.is-search-shade .search-results,
 .l-top_menu-v2 .submenu {
-    border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
 
 /* Search Results Dim */
 .l-top_menu-v2 .global-search .search-results::before {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, var(--page-color) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, var(--page-color) 100%);
 }
 
 .l-top_menu-v2 .global-search .search-results::after {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--page-color) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, var(--page-color) 100%);
 }
 
 /* Submenu Hover */
-.l-top_menu-v2 .submenu > a:hover {
-    background: #61666d;
-    color: var(--text-color-dim);
+.l-top_menu-v2 .submenu>a:hover {
+  background: #61666d;
+  color: var(--text-color-dim);
 }
 
 /* Hide Forum Icon */
 .l-top_menu-v2 .menu-icon.forum.desktop {
-    display: none;
+  display: none;
 }
 
 /*==========НАЧАЛО СТИЛЯ ПРОФИЛЯ========*/
 @media only screen and (min-width: 725px) {
-.c-brief header.head h1 {
+  .c-brief header.head h1 {
     color: #fff;
-}
+  }
 
-.c-brief header.head .notice,
-.c-brief header.head .misc,
-.c-brief header.head a.edit,
-.p-profiles .profile-head .c-info .c-additionals b,
-.p-profiles .profile-head .c-brief header h1.aliases::after,
-.p-profiles .profile-head .c-brief header .notice a,
-.p-profiles .profile-head .c-info .c-additionals div a,
-.profile-actions .mail::before,
-.profile-actions .talk::before,
-.profile-actions .fav-remove::before,
-.profile-actions .ban::before,
-.profile-actions .fav-add::before,
-.profile-actions .settings::before,
-.profile-actions .ignore-add::before {
+  .c-brief header.head .notice,
+  .c-brief header.head .misc,
+  .c-brief header.head a.edit,
+  .p-profiles .profile-head .c-info .c-additionals b,
+  .p-profiles .profile-head .c-brief header h1.aliases::after,
+  .p-profiles .profile-head .c-brief header .notice a,
+  .p-profiles .profile-head .c-info .c-additionals div a,
+  .profile-actions .mail::before,
+  .profile-actions .talk::before,
+  .profile-actions .fav-remove::before,
+  .profile-actions .ban::before,
+  .profile-actions .fav-add::before,
+  .profile-actions .settings::before,
+  .profile-actions .ignore-add::before {
     color: #e1e7f2;
-}
+  }
 
-.p-profiles-show .lifetime {
+  .p-profiles-show .lifetime {
     margin-top: 175px;
     /* Аниме + Манга */
     *margin-top: 80px;
     /* Что-то одно */
     *margin-top: 0;
     /* Ничего */
-}
+  }
 
-.p-profiles .profile-head .c-brief .avatar .profile-actions {
+  .p-profiles .profile-head .c-brief .avatar .profile-actions {
     position: absolute;
     top: 190px;
     right: 15px;
     z-index: 10;
-}
+  }
 
-.p-profiles .profile-head .c-brief .notice {
+  .p-profiles .profile-head .c-brief .notice {
     position: absolute;
     left: 0;
     bottom: 0;
     padding: 28px 20px;
-}
+  }
 
-#user_history_logs .notice {
+  #user_history_logs .notice {
     display: none;
-}
+  }
 
-.profile-actions .mail,
-.profile-actions .talk,
-.profile-actions .fav-remove,
-.profile-actions .ban,
-.profile-actions .fav-add,
-.profile-actions .settings,
-.profile-actions .ignore-add,
-.profile-actions .ignore-remove {
+  .profile-actions .mail,
+  .profile-actions .talk,
+  .profile-actions .fav-remove,
+  .profile-actions .ban,
+  .profile-actions .fav-add,
+  .profile-actions .settings,
+  .profile-actions .ignore-add,
+  .profile-actions .ignore-remove {
     margin-left: 0;
     padding: 10px 10px 8px;
     border-radius: 3px;
-}
+  }
 
-.profile-actions .mail::before,
-.profile-actions .talk::before,
-.profile-actions .fav-remove::before,
-.profile-actions .ban::before,
-.profile-actions .fav-add::before,
-.profile-actions .settings::before {
+  .profile-actions .mail::before,
+  .profile-actions .talk::before,
+  .profile-actions .fav-remove::before,
+  .profile-actions .ban::before,
+  .profile-actions .fav-add::before,
+  .profile-actions .settings::before {
     font-size: 20px;
-}
+  }
 
-.profile-actions .fav-remove::before {
+  .profile-actions .fav-remove::before {
     color: #176093;
-}
+  }
 
-.profile-actions .fav-remove::before,
-.profile-actions .fav-add::before,
-.profile-actions .ignore-add::before,
-.profile-actions .ignore-remove::before {
+  .profile-actions .fav-remove::before,
+  .profile-actions .fav-add::before,
+  .profile-actions .ignore-add::before,
+  .profile-actions .ignore-remove::before {
     font-size: 22px;
-}
+  }
 
-.p-profiles .profile-head .c-brief header {
+  .p-profiles .profile-head .c-brief header {
     margin: -30px 0px 0px 5px;
     text-align: left;
-}
+  }
 
-.p-profiles .profile-head .c-info .c-additionals {
+  .p-profiles .profile-head .c-info .c-additionals {
     position: absolute;
     bottom: 0;
     margin-bottom: 20px;
     width: 100%;
     text-align: center;
     display: none;
-}
+  }
 
-.p-profiles .profile-head .c-info .c-additionals b {
+  .p-profiles .profile-head .c-info .c-additionals b {
     display: none;
-}
+  }
 
-.p-profiles .profile-head .c-history {
+  .p-profiles .profile-head .c-history {
     margin-top: 0;
-}
+  }
 
-.p-profiles .profile-head .c-history.x2,
-.p-profiles .profile-head .c-history.x3,
-.p-profiles .profile-head .c-history.x1 {
+  .p-profiles .profile-head .c-history.x2,
+  .p-profiles .profile-head .c-history.x3,
+  .p-profiles .profile-head .c-history.x1 {
     position: absolute;
     right: 15px;
     top: 280px;
     z-index: 1;
-}
+  }
 
-.p-profiles .profile-head .c-info .c-lists-info {
+  .p-profiles .profile-head .c-info .c-lists-info {
     width: 49%;
     position: absolute;
     left: 15px;
     top: 310px;
     z-index: 2;
-}
+  }
 
-.profile-head .c-info .c-lists-info .b-stats_bar .stat_names .stat_name::after {
+  .profile-head .c-info .c-lists-info .b-stats_bar .stat_names .stat_name::after {
     padding: 0 5px 0 0;
     content: ",";
-}
+  }
 
-.b-stats_bar.anime a.title,
-.b-stats_bar.anime .title,
-.b-stats_bar.manga a.title,
-.b-stats_bar.manga .title {
+  .b-stats_bar.anime a.title,
+  .b-stats_bar.anime .title,
+  .b-stats_bar.manga a.title,
+  .b-stats_bar.manga .title {
     font-size: 14px;
     margin-bottom: 0;
     position: absolute;
@@ -1306,150 +1288,170 @@ l-top_menu-v2 .global-search .search-results .nothing_found,
     line-height: 1;
     padding: 10px;
     border-radius: 3px;
-}
+  }
 
-.c-lists-info .b-stats_bar.anime {
+  .b-stats_bar.anime a.title:before,
+  .b-stats_bar.manga a.title::before {
+    font-family: shikimori;
+    font-feature-settings: 'liga';
+    text-transform: none;
+    letter-spacing: normal;
+    content: "";
+    color: var(--headline-arrow-color);
+    position: absolute;
+    right: 10px;
+  }
+
+  .c-lists-info .b-stats_bar.anime {
     margin-bottom: -5px !important;
-}
+  }
 
-.b-stats_bar .compatibility {
+  .b-stats_bar .compatibility {
     position: absolute;
     display: none;
     right: 0;
     top: -32px;
     z-index: 10;
     padding: 6px 10px;
-}
+  }
 
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate {
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate {
     font-size: 12.5px;
-}
+  }
 
-a[href="https://shikimori.one/users?klass=manga&similar=similar"],
-a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
+  a[href="https://shikimori.one/users?klass=manga&similar=similar"],
+  a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
     visibility: hidden;
-}
+  }
 
-.b-stats_bar .compatibility span.text {
+  .b-stats_bar .compatibility span.text {
     display: none;
-}
+  }
 
-.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
     margin-bottom: 0;
-}
+  }
 
-.b-stats_bar .stat_names .stat_name .size::before,
-.b-stats_bar .stat_names .stat_name .size::after {
+  .b-stats_bar .stat_names .stat_name .size::before,
+  .b-stats_bar .stat_names .stat_name .size::after {
     display: none;
-}
+  }
 
-.cc-2 > .c-column {
+  .cc-2>.c-column {
     margin-right: 2%;
     width: 49%;
-}
+  }
 
-.profile-content .c-left {
+  .profile-content .c-left {
     margin-bottom: 20px;
-}
+  }
 
-.p-profiles-show.x1200 .profile-content .c-left {
+  .p-profiles-show.x1200 .profile-content .c-left {
     margin-right: 2%;
     width: 50%;
-}
+  }
 
-.p-profiles-show.x1200 .profile-content .c-right {
+  .p-profiles-show.x1200 .profile-content .c-right {
     width: 48%;
-}
+  }
 
-.p-profiles-show .lifetime {
+  .p-profiles-show .lifetime {
     margin-bottom: 15px;
-}
+  }
 
-.p-profiles-show .lifetime .bar {
+  .p-profiles-show .lifetime .bar {
     border-radius: 2px;
-}
+  }
 
-.p-profiles-show .lifetime .label {
+  .p-profiles-show .lifetime .label {
     text-transform: uppercase;
-}
+  }
 
-.p-profiles-show .profile-content .activity .title {
+  .p-profiles-show .profile-content .activity .title {
     display: none;
-}
+  }
 
-.profile-content > .cc-2 .c-column .cc-2a.m30 {
+  .profile-content>.cc-2 .c-column .cc-2a.m30 {
     min-height: 230px;
-}
+  }
 
-.profile-content .cc-2 .c-column .cc-2a > .c-column {
+  .p-profiles-show .cc-favourites .c-column {
+    margin-bottom: 10px;
+  }
+
+  .profile-content .cc-2 .c-column .cc-2a>.c-column {
     margin-bottom: 30px !important;
     float: none !important;
-}
+  }
 
-.p-profiles .profile-head .c-brief header h1.aliases:after {
+  .p-profiles .profile-head .c-brief header h1.aliases:after {
     font-size: 15px;
     top: -2px;
     position: relative;
-}
+  }
 
-.bar.vertical {
+  .bar.vertical {
     border-bottom: 0;
-}
+  }
 
-.bar.vertical .line {
+  .bar.vertical .line {
     border-right: 1px solid transparent;
-}
+  }
 
-.b-stats_bar.anime .bar {
+  .b-stats_bar.anime .bar {
     overflow: visible;
-}
+  }
 
-.b-stats_bar .bar {
+  .b-stats_bar .bar {
     height: 16px;
     line-height: 16px;
-}
+  }
 
-.b-stats_bar .bar .first,
-.b-stats_bar .bar .second,
-.b-stats_bar .bar .third {
+  .b-stats_bar .bar .first,
+  .b-stats_bar .bar .second,
+  .b-stats_bar .bar .third {
     font-size: 12.5px;
     height: 16px;
     line-height: 16px;
-}
+  }
 
-.p-profiles-show .profile-content .graph {
+  .p-profiles-show .profile-content .graph {
     height: 110px;
-}
+  }
 
-.p-profiles-show.x1200 .profile-content .graph {
+  .p-profiles-show.x1200 .profile-content .graph {
     height: 123px;
-}
+  }
 
-.bar.vertical .line .x_label {
+  .bar.vertical .line .x_label {
     bottom: -19px;
     color: #fff;
     background: #4682b4;
     border-radius: 3px;
     padding: 0px 5px;
-}
+    margin-left: -10px;
+  }
 
-.bar.vertical .line .bar-container .bar.min {
+  .bar.vertical .line:first-child .x_label {
+    margin-left: 0;
+  }
+
+  .bar.vertical .line:last-child .x_label {
+    margin-left: -20px;
+  }
+
+  .bar.vertical .line .bar-container .bar.min {
     border-radius: 2px;
-}
+  }
 
-  
-/* Img & Video Curved Corners */
-.b-catalog_entry .cover .image-decor img,
-.b-db_entry > .c-image img,
-.b-menu_logo img {
+  /* Img & Video Curved Corners */
+  .b-catalog_entry .cover .image-decor img {
     margin: -2%;
-	width: 104%;
-  	max-width: 104%;
-}
- 
-.c-poster,
-.b-menu_logo,
-.image-cutter {
+    width: 104%;
+    max-width: 104%;
+  }
+
+  .image-cutter {
     width: 98%;
     height: 98%;
     display: block;
@@ -1457,33 +1459,36 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
     overflow: hidden;
     position: relative;
     border-radius: 2px;
-}
-  
-.image-decor > .text {
-  border-radius: 0 0 2px 2px;
-  width: 98% !important;
-}
+  }
 
-.b-db_entry-variant-list_item .image img,
-.b-image img,
-.b-video .video-link {
-  border-radius: 2px;
-}
-  
-/*********************************/
-.p-profiles .l-page header.head.misc {
+  .image-decor>.text {
+    border-radius: 0 0 2px 2px;
+    width: 98% !important;
+  }
+
+  .b-db_entry-variant-list_item .image img,
+  .b-image img,
+  .b-video .video-link,
+  .b-db_entry>.c-image img,
+  .p-profiles .profile-head .c-history .entry img,
+  .b-badge img, .b-badge .no-image {
+    border-radius: 2px;
+  }
+
+  /*********************************/
+  .p-profiles .l-page header.head.misc {
     overflow: visible;
     margin: -15px -15px 30px;
     position: relative;
     height: 250px;
-    background-image: url(https://i.imgur.com/KTN16kQ.jpg);
+    background-image: var(--profile-head-bg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 2px 2px 0 0;
-}
+  }
 
-.p-profiles .l-page header.head.misc h1 {
+  .p-profiles .l-page header.head.misc h1 {
     background-color: rgba(0, 0, 0, 0);
     background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.5) 50%, rgb(0, 0, 0) 100%);
     position: absolute;
@@ -1494,15 +1499,15 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
     padding: 28px 20px;
     text-align: left;
     color: #fff;
-}
+  }
 
-.p-profiles .l-page header.head.misc .b-breadcrumbs {
+  .p-profiles .l-page header.head.misc .b-breadcrumbs {
     position: absolute;
     bottom: 25px;
     left: 20px;
-}
+  }
 
-.p-profiles .profile-head .c-brief .avatar img {
+  .p-profiles .profile-head .c-brief .avatar img {
     position: absolute;
     width: 160px;
     height: 160px;
@@ -1512,9 +1517,9 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
     margin: 0 auto;
     border-radius: 50%;
     z-index: 16;
-}
-  
-.p-profiles .l-page header.head.misc::after {
+  }
+
+  .p-profiles .l-page header.head.misc::after {
     content: '';
     display: block;
     position: absolute;
@@ -1527,122 +1532,132 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
     margin: auto;
     background-image: url("https://moe.shikimori.one/system/users/x160/42277.png");
     border-radius: 50%;
-}
+  }
 
-.p-profiles .l-page header.head.misc h1 a.back::before,
-.p-profiles .l-page header.head.misc h2 a.back::before {
+  .p-profiles .l-page header.head.misc h1 a.back::before,
+  .p-profiles .l-page header.head.misc h2 a.back::before {
     color: #fff;
-}
+  }
 
-.p-profiles .l-page header.head.misc .b-link {
+  .p-profiles .l-page header.head.misc .b-link {
     color: #65c0ff;
-}
+  }
 
-.p-profiles .l-page .l-menu .block.avatar,
-.p-profiles .l-page header.head.misc .misc {
+  .p-profiles .l-page .l-menu .block.avatar,
+  .p-profiles .l-page header.head.misc .misc {
     display: none;
-}
+  }
 }
 
 /*================КОНЕЦ СТИЛЯ ПРОФИЛЯ==============*/
-
 /* Аниме/Манга/Ранобэ рядом с пунктами истории */
 .history-page a.bubbled-processed:before {
   display: inline-block;
   margin: 0 5px 0 0;
 }
-.history-page a.bubbled-processed[href ^= "/a"]:before {
+
+.history-page a.bubbled-processed[href ^="/a"]:before {
   content: '(Аниме) ';
   color: green;
 }
-.history-page a.bubbled-processed[href ^= "/m"]:before {
+
+.history-page a.bubbled-processed[href ^="/m"]:before {
   content: '(Манга) ';
   color: purple;
 }
-.history-page a.bubbled-processed[href ^= "/r"]:before {
+
+.history-page a.bubbled-processed[href ^="/r"]:before {
   content: '(Ранобэ) ';
   color: blue;
 }
-[data-locale="en"] .history-page a.bubbled-processed[href ^= "/a"]:before {
+
+[data-locale="en"] .history-page a.bubbled-processed[href ^="/a"]:before {
   content: '(Anime) ';
 }
-[data-locale="en"] .history-page a.bubbled-processed[href ^= "/m"]:before {
+
+[data-locale="en"] .history-page a.bubbled-processed[href ^="/m"]:before {
   content: '(Manga) ';
 }
-[data-locale="en"] .history-page a.bubbled-processed[href ^= "/r"]:before {
+
+[data-locale="en"] .history-page a.bubbled-processed[href ^="/r"]:before {
   content: '(Ranobe) ';
 }
-/* END of Аниме/Манга/Ранобэ рядом с пунктами истории */
 
+/* END of Аниме/Манга/Ранобэ рядом с пунктами истории */
 /*===========НАЧАЛО СТИЛЯ ГРАФИКОВ=============*/
 @media only screen and (min-width: 725px) {
-/*COLORS*/
-/*Просмотрено*/
-.c-lists-info .b-stats_bar .bar > div.first:before,
-.c-lists-info .b-stats_bar .bar > div.first:after,
-.c-lists-info .b-stats_bar .stat_names .stat_name a[href*="completed"]:before {
+
+  /*COLORS*/
+  /*Просмотрено*/
+  .c-lists-info .b-stats_bar .bar>div.first:before,
+  .c-lists-info .b-stats_bar .bar>div.first:after,
+  .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="completed"]:before {
     border-color: transparent;
     background-color: var(--color-orange);
-}
+  }
 
-/*Запланировано*/
-.c-lists-info .b-stats_bar .bar > div.second:before,
-.c-lists-info .b-stats_bar .bar > div.second:after,
-.c-lists-info .b-stats_bar .stat_names .stat_name a[href*="planned"]:before,
-.c-lists-info .b-stats_bar .stat_names .stat_name a[href*="watching"]:before,
-.c-lists-info .b-stats_bar .stat_names .stat_name a[href*="on_hold"]:before {
+  /*Запланировано*/
+  .c-lists-info .b-stats_bar .bar>div.second:before,
+  .c-lists-info .b-stats_bar .bar>div.second:after,
+  .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="planned"]:before,
+  .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="watching"]:before,
+  .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="on_hold"]:before {
     border-color: transparent;
     background-color: var(--color-green);
-}
+  }
 
-/*Оба Графика Брошено*/
-.c-lists-info .b-stats_bar .bar,
-.c-lists-info .b-stats_bar .stat_names .stat_name a[href*="dropped"]:before {
+  /*Оба Графика Брошено*/
+  .c-lists-info .b-stats_bar .bar,
+  .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="dropped"]:before {
     border-color: transparent;
     background-color: var(--color-red);
-}
+  }
 
-/*Дырка в графике указать, transparent для прозрачной дырки*/
-.c-lists-info .b-stats_bar .bar:before {
+  /*Дырка в графике указать, transparent для прозрачной дырки*/
+  .c-lists-info .b-stats_bar .bar:before {
     background: var(--color-7);
-}
+  }
 
-/*COLORS:END*/
-.c-lists-info .b-stats_bar {
+  /*COLORS:END*/
+  .c-lists-info .b-stats_bar {
     width: 49%;
     display: inline-block;
     padding: 5px 0px;
     position: relative;
-}
+  }
 
-.c-lists-info .b-stats_bar:first-child {
+  .c-lists-info .b-stats_bar:first-child {
     margin-right: 9px;
-}
+  }
 
-.c-lists-info .b-stats_bar .stat_names .stat_name:after {
+  .c-lists-info .b-stats_bar .stat_names .stat_name:after {
     display: none
-}
+  }
 
-/*Блок списка*/
-.c-lists-info .b-stats_bar .stat_names {
+  /*Блок списка*/
+  .c-lists-info .b-stats_bar .stat_names {
     display: flex;
     position: absolute;
     top: 13px;
     left: 103px;
     flex-direction: column;
-}
+  }
 
-/*Ссылка*/
-.c-lists-info .b-stats_bar .stat_names .stat_name a {
+  /*Ссылка*/
+  .c-lists-info .b-stats_bar .stat_names .stat_name a {
     display: inline-block;
     font-size: 12.5px;
     position: relative;
     line-height: 20px;
     color: var(--link-color);
-}
+  }
 
-/*Круг цветового индикатора*/
-.c-lists-info .b-stats_bar .stat_names .stat_name a:before {
+  .c-lists-info .b-stats_bar .stat_names .stat_name a:hover {
+    color: var(--link-hover-color);
+  }
+
+  /*Круг цветового индикатора*/
+  .c-lists-info .b-stats_bar .stat_names .stat_name a:before {
     content: "";
     display: inline-block;
     width: 10px;
@@ -1652,23 +1667,23 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
     vertical-align: middle;
     border: 1px solid #ddd;
     border-radius: 50%;
-}
+  }
 
-/*CIRCLE BAR*/
-.c-lists-info .b-stats_bar .bar,
-.c-lists-info .b-stats_bar .bar > div {
+  /*CIRCLE BAR*/
+  .c-lists-info .b-stats_bar .bar,
+  .c-lists-info .b-stats_bar .bar>div {
     height: 100px !important;
     width: 100px !important;
-}
+  }
 
-.c-lists-info .b-stats_bar .bar {
+  .c-lists-info .b-stats_bar .bar {
     position: relative;
     text-align: center;
     border-radius: 50%;
     margin: 10px 0;
-}
+  }
 
-.c-lists-info .b-stats_bar .bar:before {
+  .c-lists-info .b-stats_bar .bar:before {
     content: "";
     width: 25px;
     height: 25px;
@@ -1677,555 +1692,554 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
     z-index: 100;
     left: 38px;
     top: 38px;
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div {
+  .c-lists-info .b-stats_bar .bar>div {
     clip: rect(0px,
-    100px,
-    100px,
-    50px);
+      100px,
+      100px,
+      50px);
     background-color: transparent !important;
     font-size: 0 !important;
     position: absolute;
     left: 0;
     top: 0;
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div:before,
-.c-lists-info .b-stats_bar .bar > div:after {
+  .c-lists-info .b-stats_bar .bar>div:before,
+  .c-lists-info .b-stats_bar .bar>div:after {
     content: "";
     position: absolute;
     right: 0;
     border: 50px solid #333;
     clip: rect(0px,
-    50px,
-    100px,
-    0px);
+      50px,
+      100px,
+      0px);
     border-radius: 50%;
     transform: rotate(0deg);
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div.third {
+  .c-lists-info .b-stats_bar .bar>div.third {
     display: none
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div.second {
+  .c-lists-info .b-stats_bar .bar>div.second {
     transform: scale(-1,
-    1)
-}
+      1)
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 1."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 1."]:before {
     transform: rotate(3.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 2."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 2."]:before {
     transform: rotate(7.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 3."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 3."]:before {
     transform: rotate(10.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 4."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 4."]:before {
     transform: rotate(14.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 5."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 5."]:before {
     transform: rotate(18deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 6."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 6."]:before {
     transform: rotate(21.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 7."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 7."]:before {
     transform: rotate(25.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 8."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 8."]:before {
     transform: rotate(28.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 9."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 9."]:before {
     transform: rotate(32.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 10."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 10."]:before {
     transform: rotate(36deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 11."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 11."]:before {
     transform: rotate(39.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 12."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 12."]:before {
     transform: rotate(43.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 13."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 13."]:before {
     transform: rotate(46.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 14."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 14."]:before {
     transform: rotate(50.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 15."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 15."]:before {
     transform: rotate(54deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 16."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 16."]:before {
     transform: rotate(57.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 17."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 17."]:before {
     transform: rotate(61.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 18."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 18."]:before {
     transform: rotate(64.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 19."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 19."]:before {
     transform: rotate(68.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 20."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 20."]:before {
     transform: rotate(72deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 21."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 21."]:before {
     transform: rotate(75.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 22."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 22."]:before {
     transform: rotate(79.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 23."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 23."]:before {
     transform: rotate(82.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 24."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 24."]:before {
     transform: rotate(86.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 25."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 25."]:before {
     transform: rotate(90deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 26."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 26."]:before {
     transform: rotate(93.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 27."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 27."]:before {
     transform: rotate(97.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 28."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 28."]:before {
     transform: rotate(100.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 29."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 29."]:before {
     transform: rotate(104.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 30."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 30."]:before {
     transform: rotate(108deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 31."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 31."]:before {
     transform: rotate(111.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 32."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 32."]:before {
     transform: rotate(115.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 33."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 33."]:before {
     transform: rotate(118.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 34."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 34."]:before {
     transform: rotate(122.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 35."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 35."]:before {
     transform: rotate(126deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 36."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 36."]:before {
     transform: rotate(129.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 37."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 37."]:before {
     transform: rotate(133.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 38."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 38."]:before {
     transform: rotate(136.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 39."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 39."]:before {
     transform: rotate(140.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 40."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 40."]:before {
     transform: rotate(144deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 41."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 41."]:before {
     transform: rotate(147.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 42."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 42."]:before {
     transform: rotate(151.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 43."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 43."]:before {
     transform: rotate(154.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 44."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 44."]:before {
     transform: rotate(158.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 45."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 45."]:before {
     transform: rotate(162deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 46."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 46."]:before {
     transform: rotate(165.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 47."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 47."]:before {
     transform: rotate(169.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 48."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 48."]:before {
     transform: rotate(172.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 49."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 49."]:before {
     transform: rotate(176.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 50."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 50."]:before {
     transform: rotate(180deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 51."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 51."]:before {
     transform: rotate(183.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 52."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 52."]:before {
     transform: rotate(187.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 53."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 53."]:before {
     transform: rotate(190.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 54."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 54."]:before {
     transform: rotate(194.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 55."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 55."]:before {
     transform: rotate(198deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 56."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 56."]:before {
     transform: rotate(201.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 57."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 57."]:before {
     transform: rotate(205.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 58."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 58."]:before {
     transform: rotate(208.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 59."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 59."]:before {
     transform: rotate(212.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 60."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 60."]:before {
     transform: rotate(216deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 61."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 61."]:before {
     transform: rotate(219.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 62."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 62."]:before {
     transform: rotate(223.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 63."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 63."]:before {
     transform: rotate(226.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 64."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 64."]:before {
     transform: rotate(230.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 65."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 65."]:before {
     transform: rotate(234deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 66."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 66."]:before {
     transform: rotate(237.66deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 67."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 67."]:before {
     transform: rotate(241.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 68."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 68."]:before {
     transform: rotate(244.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 69."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 69."]:before {
     transform: rotate(248.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 70."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 70."]:before {
     transform: rotate(252deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 71."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 71."]:before {
     transform: rotate(255.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 72."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 72."]:before {
     transform: rotate(259.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 73."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 73."]:before {
     transform: rotate(262.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 74."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 74."]:before {
     transform: rotate(266.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 75."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 75."]:before {
     transform: rotate(27deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 76."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 76."]:before {
     transform: rotate(273.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 77."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 77."]:before {
     transform: rotate(277.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 78."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 78."]:before {
     transform: rotate(280.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 79."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 79."]:before {
     transform: rotate(284.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 80."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 80."]:before {
     transform: rotate(288deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 81."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 81."]:before {
     transform: rotate(291.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 82."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 82."]:before {
     transform: rotate(295.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 83."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 83."]:before {
     transform: rotate(298.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 84."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 84."]:before {
     transform: rotate(302.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 85."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 85."]:before {
     transform: rotate(306deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 86."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 86."]:before {
     transform: rotate(309.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 87."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 87."]:before {
     transform: rotate(313.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 88."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 88."]:before {
     transform: rotate(316.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 89."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 89."]:before {
     transform: rotate(320.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 90."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 90."]:before {
     transform: rotate(324deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 91."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 91."]:before {
     transform: rotate(327deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 92."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 92."]:before {
     transform: rotate(331.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 93."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 93."]:before {
     transform: rotate(334.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 94."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 94."]:before {
     transform: rotate(338.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 95."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 95."]:before {
     transform: rotate(342deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 96."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 96."]:before {
     transform: rotate(345.6deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 97."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 97."]:before {
     transform: rotate(349.2deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 98."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 98."]:before {
     transform: rotate(352.8deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 99."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 99."]:before {
     transform: rotate(356.4deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 100."]:before {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 100."]:before {
     transform: rotate(360deg)
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 51."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 52."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 53."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 54."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 55."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 56."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 57."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 58."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 59."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 60."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 61."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 62."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 63."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 64."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 65."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 66."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 67."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 68."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 69."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 70."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 71."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 72."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 73."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 74."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 75."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 76."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 77."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 78."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 79."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 80."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 81."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 82."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 83."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 84."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 85."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 86."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 87."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 88."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 89."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 90."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 91."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 92."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 93."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 94."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 95."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 96."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 97."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 98."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 99."]:after,
-.c-lists-info .b-stats_bar .bar > div[style*="width: 100."]:after {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 51."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 52."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 53."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 54."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 55."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 56."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 57."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 58."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 59."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 60."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 61."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 62."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 63."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 64."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 65."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 66."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 67."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 68."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 69."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 70."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 71."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 72."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 73."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 74."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 75."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 76."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 77."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 78."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 79."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 80."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 81."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 82."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 83."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 84."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 85."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 86."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 87."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 88."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 89."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 90."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 91."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 92."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 93."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 94."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 95."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 96."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 97."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 98."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 99."]:after,
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 100."]:after {
     transform: rotate(180deg);
-}
+  }
 
-.c-lists-info .b-stats_bar .bar > div[style*="width: 51."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 52."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 53."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 54."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 55."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 56."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 57."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 58."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 59."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 60."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 61."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 62."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 63."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 64."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 65."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 66."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 67."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 68."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 69."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 70."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 71."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 72."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 73."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 74."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 75."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 76."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 77."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 78."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 79."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 80."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 81."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 82."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 83."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 84."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 85."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 86."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 87."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 88."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 89."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 90."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 91."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 92."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 93."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 94."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 95."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 96."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 97."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 98."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 99."],
-.c-lists-info .b-stats_bar .bar > div[style*="width: 100."] {
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 51."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 52."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 53."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 54."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 55."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 56."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 57."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 58."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 59."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 60."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 61."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 62."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 63."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 64."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 65."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 66."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 67."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 68."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 69."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 70."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 71."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 72."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 73."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 74."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 75."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 76."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 77."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 78."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 79."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 80."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 81."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 82."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 83."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 84."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 85."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 86."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 87."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 88."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 89."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 90."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 91."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 92."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 93."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 94."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 95."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 96."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 97."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 98."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 99."],
+  .c-lists-info .b-stats_bar .bar>div[style*="width: 100."] {
     clip: rect(auto,
-    auto,
-    auto,
-    auto);
-}
+      auto,
+      auto,
+      auto);
+  }
 }
 
 /*==========КОНЕЦ СТИЛЯ ГРАФИКОВ==========*/
-
 /*========================================*/
 /* Дата + Время */
 .p-user_history-index .history-page .history-interval p .date {
@@ -2244,327 +2258,509 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
 /* Дата */
 .p-user_history-index .history-page .history-interval p .date::after {
   position: relative;
-  width: 77px; /* Размер даты */
-  margin-left: 5px; /* Отступ между датой и временем */
+  width: 77px;
+  /* Размер даты */
+  margin-left: 5px;
+  /* Отступ между датой и временем */
   white-space: nowrap;
   z-index: 1;
 }
 
 /*Установка переменны дней*/
-.p-user_history-index .history-page .history-interval p .date[datetime*='-01T']::after{--HD-day: '/ 01';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-02T']::after{--HD-day: '/ 02';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-03T']::after{--HD-day: '/ 03';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-04T']::after{--HD-day: '/ 04';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-05T']::after{--HD-day: '/ 05';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-06T']::after{--HD-day: '/ 06';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-07T']::after{--HD-day: '/ 07';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-08T']::after{--HD-day: '/ 08';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-09T']::after{--HD-day: '/ 09';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-10T']::after{--HD-day: '/ 10';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-11T']::after{--HD-day: '/ 11';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-12T']::after{--HD-day: '/ 12';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-13T']::after{--HD-day: '/ 13';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-14T']::after{--HD-day: '/ 14';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-15T']::after{--HD-day: '/ 15';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-16T']::after{--HD-day: '/ 16';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-17T']::after{--HD-day: '/ 17';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-18T']::after{--HD-day: '/ 18';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-19T']::after{--HD-day: '/ 19';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-20T']::after{--HD-day: '/ 20';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-21T']::after{--HD-day: '/ 21';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-22T']::after{--HD-day: '/ 22';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-23T']::after{--HD-day: '/ 23';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-24T']::after{--HD-day: '/ 24';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-25T']::after{--HD-day: '/ 25';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-26T']::after{--HD-day: '/ 26';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-27T']::after{--HD-day: '/ 27';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-28T']::after{--HD-day: '/ 28';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-29T']::after{--HD-day: '/ 29';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-30T']::after{--HD-day: '/ 30';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-31T']::after{--HD-day: '/ 31';}
+.p-user_history-index .history-page .history-interval p .date[datetime*='-01T']::after {
+  --HD-day: '/ 01';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-02T']::after {
+  --HD-day: '/ 02';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-03T']::after {
+  --HD-day: '/ 03';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-04T']::after {
+  --HD-day: '/ 04';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-05T']::after {
+  --HD-day: '/ 05';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-06T']::after {
+  --HD-day: '/ 06';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-07T']::after {
+  --HD-day: '/ 07';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-08T']::after {
+  --HD-day: '/ 08';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-09T']::after {
+  --HD-day: '/ 09';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-10T']::after {
+  --HD-day: '/ 10';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-11T']::after {
+  --HD-day: '/ 11';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-12T']::after {
+  --HD-day: '/ 12';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-13T']::after {
+  --HD-day: '/ 13';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-14T']::after {
+  --HD-day: '/ 14';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-15T']::after {
+  --HD-day: '/ 15';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-16T']::after {
+  --HD-day: '/ 16';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-17T']::after {
+  --HD-day: '/ 17';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-18T']::after {
+  --HD-day: '/ 18';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-19T']::after {
+  --HD-day: '/ 19';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-20T']::after {
+  --HD-day: '/ 20';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-21T']::after {
+  --HD-day: '/ 21';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-22T']::after {
+  --HD-day: '/ 22';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-23T']::after {
+  --HD-day: '/ 23';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-24T']::after {
+  --HD-day: '/ 24';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-25T']::after {
+  --HD-day: '/ 25';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-26T']::after {
+  --HD-day: '/ 26';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-27T']::after {
+  --HD-day: '/ 27';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-28T']::after {
+  --HD-day: '/ 28';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-29T']::after {
+  --HD-day: '/ 29';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-30T']::after {
+  --HD-day: '/ 30';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-31T']::after {
+  --HD-day: '/ 31';
+}
 
 /*Установка переменны месяцев*/
-.p-user_history-index .history-page .history-interval p .date[datetime*='-01-']::after{--HD-month: 'янв';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-02-']::after{--HD-month: 'фев';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-03-']::after{--HD-month: 'мар';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-04-']::after{--HD-month: 'апр';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-05-']::after{--HD-month: 'май';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-06-']::after{--HD-month: 'июн';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-07-']::after{--HD-month: 'июл';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-08-']::after{--HD-month: 'авг';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-09-']::after{--HD-month: 'сен';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-10-']::after{--HD-month: 'окт';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-11-']::after{--HD-month: 'ноя';}
-.p-user_history-index .history-page .history-interval p .date[datetime*='-12-']::after{--HD-month: 'дек';}
-
-.p-user_history-index .history-page .history-interval p .date::after{
-	content: var(--HD-day)' 'var(--HD-month)' 'attr(datetime);
+.p-user_history-index .history-page .history-interval p .date[datetime*='-01-']::after {
+  --HD-month: 'янв';
 }
-/*========================================*/
 
+.p-user_history-index .history-page .history-interval p .date[datetime*='-02-']::after {
+  --HD-month: 'фев';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-03-']::after {
+  --HD-month: 'мар';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-04-']::after {
+  --HD-month: 'апр';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-05-']::after {
+  --HD-month: 'май';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-06-']::after {
+  --HD-month: 'июн';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-07-']::after {
+  --HD-month: 'июл';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-08-']::after {
+  --HD-month: 'авг';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-09-']::after {
+  --HD-month: 'сен';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-10-']::after {
+  --HD-month: 'окт';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-11-']::after {
+  --HD-month: 'ноя';
+}
+
+.p-user_history-index .history-page .history-interval p .date[datetime*='-12-']::after {
+  --HD-month: 'дек';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-01-']::after {
+  --HD-month: 'jan';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-02-']::after {
+  --HD-month: 'feb';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-03-']::after {
+  --HD-month: 'mar';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-04-']::after {
+  --HD-month: 'apr';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-05-']::after {
+  --HD-month: 'may';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-06-']::after {
+  --HD-month: 'jun';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-07-']::after {
+  --HD-month: 'jul';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-08-']::after {
+  --HD-month: 'aug';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-09-']::after {
+  --HD-month: 'sep';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-10-']::after {
+  --HD-month: 'okt';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-11-']::after {
+  --HD-month: 'nov';
+}
+
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-12-']::after {
+  --HD-month: 'dec';
+}
+
+.p-user_history-index .history-page .history-interval p .date::after {
+  content: var(--HD-day)' 'var(--HD-month)' ';
+}
+
+/*========================================*/
 /* USER LIST CATEGORY LINKS & SEARCH */
-.p-user_rates-index .subheadline-buttons + .subheadline {
-    display: none;
+.p-user_rates-index .subheadline-buttons+.subheadline {
+  display: none;
 }
 
 .p-user_rates-index .subheadline-buttons {
-    top: 0;
-    z-index: 16;
+  top: 0;
+  z-index: 16;
 }
 
 .b-options-floated.mylist::before {
-    content: "Быстрый переход по спискам и Поиск";
-    display: block;
-    clear: both;
-    line-height: 1;
-    padding: 10px;
-    border-radius: 3px;
-    margin-bottom: 5px !important;
-    font-size: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    background: var(--headline-background-color);
-    border-left: 5px solid var(--headline-border-color);
-    color: var(--headline-color);
-    font-family: var(--font-alt);
-    font-weight: 700;
-    letter-spacing: .13px;
-    position: relative;
-    text-transform: uppercase;
+  content: "Переход по спискам и Поиск";
+  display: block;
+  clear: both;
+  line-height: 1;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px !important;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--headline-background-color);
+  border-left: 5px solid var(--headline-border-color);
+  color: var(--headline-color);
+  font-family: var(--font-alt);
+  font-weight: 700;
+  letter-spacing: .13px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+[data-locale="en"] .b-options-floated.mylist::before {
+  content: "Jump to categories and Search";
 }
 
 .b-options-floated.mylist {
-    margin: -10px auto 0px;
-    padding: 10px 0 5px;
-    display: block;
-    position: sticky;
-    top: 45px;
-    background-color: var(--page-color);
-    z-index: 15;
+  margin: -10px auto 0px;
+  padding: 10px 0 5px;
+  display: block;
+  position: sticky;
+  top: 45px;
+  background-color: var(--page-color);
+  z-index: 15;
 }
 
 .b-options-floated.mylist a {
-    font-size: 14px;
-    color: var(--text-color);
-    display: inline-block;
-    text-transform: uppercase;
-    margin: 0px 5px 5px 0;
-    width: auto;
-    font-weight: bold;
-    padding: 5px 5px 5px 7px;
-    border-radius: 3px;
-    background: var(--headline-background-color);
-    opacity: 1;
+  font-size: 14px;
+  color: var(--text-color);
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0px 5px 5px 0;
+  width: auto;
+  font-weight: bold;
+  padding: 5px 5px 5px 7px;
+  border-radius: 3px;
+  background: var(--headline-background-color);
+  opacity: 1;
 }
 
 .p-user_rates-index .l-content .b-options-floated span::before,
 .p-user_rates-index .l-content .b-options-floated span::after {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .b-options-floated.mylist a::after {
-    display: none;
+  display: none;
 }
 
 .b-options-floated.mylist a[data-id="planned"],
 .b-options-floated.mylist a[data-id="on_hold"],
 .b-options-floated.mylist a[data-id="watching"],
 .b-options-floated.mylist a[data-id="rewatching"] {
-    background-color: var(--color-green);
+  background-color: var(--color-green);
 }
 
 .b-options-floated.mylist a[data-id="completed"] {
-    background-color: var(--color-orange);
+  background-color: var(--color-orange);
 }
 
 .b-options-floated.mylist a[data-id="dropped"] {
-    background-color: var(--color-red);
+  background-color: var(--color-red);
 }
 
 .b-options-floated.mylist a:hover {
-    color: var(--text-color-dim);
-    text-decoration: none;
-    opacity: 0.8;
+  color: var(--text-color-dim);
+  text-decoration: none;
+  opacity: 0.8;
 }
 
 .b-collection_search {
-    display: block;
-    position: sticky;
-    top: 55px;
-    background-color: var(--page-color);
-    z-index: 15;
+  display: block;
+  position: sticky;
+  top: 55px;
+  background-color: var(--page-color);
+  z-index: 15;
 }
 
 .b-collection_search .field input {
-    border: 1px solid rgba(172, 177, 180, .4);
-    padding: 0 42px 0 15px;
-    border-radius: 3px;
+  border: 1px solid rgba(172, 177, 180, .4);
+  padding: 0 42px 0 15px;
+  border-radius: 3px;
 }
 
 /* USER LIST HEADERS */
-.mylist ~ .list-groups .status-0 .subheadline,
-.mylist ~ .list-groups .status-1 .subheadline,
-.mylist ~ .list-groups .status-9 .subheadline,
-.mylist ~ .list-groups .status-3 .subheadline {
-    border-left-color: green;
-    background-color: var(--color-green);
-    color: var(--text-color);
+.mylist~.list-groups .status-0 .subheadline,
+.mylist~.list-groups .status-1 .subheadline,
+.mylist~.list-groups .status-9 .subheadline,
+.mylist~.list-groups .status-3 .subheadline {
+  border-left-color: green;
+  background-color: var(--color-green);
+  color: var(--text-color);
 }
 
-.mylist ~ .list-groups .status-2 .subheadline {
-    border-left-color: orange;
-    background-color: var(--color-orange);
-    color: var(--text-color);
+.mylist~.list-groups .status-2 .subheadline {
+  border-left-color: orange;
+  background-color: var(--color-orange);
+  color: var(--text-color);
 }
 
-.mylist ~ .list-groups .status-4 .subheadline {
-    border-left-color: red;
-    background-color: var(--color-red);
-    color: var(--text-color);
+.mylist~.list-groups .status-4 .subheadline {
+  border-left-color: red;
+  background-color: var(--color-red);
+  color: var(--text-color);
 }
 
 /* USER LIST TABLE */
 .p-user_rates-index .list-lines {
-    border-collapse: separate;
-    border-spacing: 0 5px;
-    table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  table-layout: fixed;
 }
 
 /* USER LIST TD TR */
 .p-user_rates-index .list-lines .entries tr,
 .p-user_rates-index .list-lines .entries td {
-    line-height: 2;
-    vertical-align: middle;
+  line-height: 2;
+  vertical-align: middle;
 }
 
 .p-user_rates-index .list-lines thead .border th {
-    background-color: var(--color-2);
-    padding-top: 2px;
+  background-color: var(--color-2);
+  padding-top: 2px;
 }
 
 .p-user_rates-index .list-lines {
-    border-bottom: 2px solid var(--color-2);
+  border-bottom: 2px solid var(--color-2);
 }
 
 .p-user_rates-index .list-lines .entries tr:nth-child(2n+1) td {
-    background-color: var(--color-2);
+  background-color: var(--color-2);
 }
 
 .p-user_rates-index .list-lines tr:nth-child(2n+1) td:nth-child(2n+1) {
-    background-color: var(--color-3);
-    border-left: 1px solid var(--color-3);
+  background-color: var(--color-3);
+  border-left: 1px solid var(--color-3);
 }
 
 .p-user_rates-index .list-lines .entries tr:nth-child(2n) td {
-    background-color: var(--color-4);
+  background-color: var(--color-4);
 }
 
 .p-user_rates-index .list-lines tr:nth-child(2n) td:nth-child(2n+1) {
-    background-color: var(--color-5);
-    border-left: 1px solid var(--color-5);
+  background-color: var(--color-5);
+  border-left: 1px solid var(--color-5);
 }
 
 .p-user_rates-index .list-lines .entries tr td:first-child {
-    border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
 }
 
 .p-user_rates-index .list-lines .entries tr td:last-child {
-    border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
 }
 
 .p-user_rates-index .list-lines .selectable:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .p-user_rates-index .list-lines .selectable:hover td {
-    background-color: var(--color-6) !important;
-    border-left-color: var(--color-6)!important;
+  background-color: var(--color-6) !important;
+  border-left-color: var(--color-6) !important;
 }
 
 .p-user_rates-index .list-lines tr td .new-value .item-add {
-    top: -16px !important;
-    display: inline-block;
-    position: relative;
+  top: -16px !important;
+  display: inline-block;
+  position: relative;
 }
 
 .p-user_rates-index .list-lines tr .index {
-    color: inherit;
-    padding-right: 0;
+  color: inherit;
+  padding-right: 0;
 }
 
 .p-user_rates-index .list-lines tr .name {
-    padding: 3px 10px;
+  padding: 3px 10px;
+  width: auto;
 }
 
 .p-user_rates-index .list-lines tr .name-en {
-    display: none;
-    max-width: 80%;
-    overflow: hidden;
-    white-space: nowrap;
-    float: left;
-    clear: both;
-    text-overflow: ellipsis;
-    margin-bottom: -5px;
-    font-size: 11px;
-    color: gray;
+  display: none;
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  clear: both;
+  text-overflow: ellipsis;
+  margin-bottom: -5px;
+  font-size: 11px;
+  color: gray;
 }
 
 .p-user_rates-index .list-lines tr .name-ru {
-    display: block;
-    max-width: 80%;
-    overflow: hidden;
-    white-space: nowrap;
-    float: left;
-    clear: both;
-    text-overflow: ellipsis;
+  display: block;
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  clear: both;
+  text-overflow: ellipsis;
 }
 
 .p-user_rates-index .list-lines tr td .rewatches,
 .p-user_rates-index .list-lines tr td .ongoing,
 .p-user_rates-index .list-lines tr td .anons {
-    float: left;
+  float: left;
 }
 
 .p-user_rates-index .list-lines tr td .rate-text {
-    color: darkgray;
-    font-size: 12.5px;
-    line-height: 1rem;
-    float: left;
-    clear: both;
+  color: darkgray;
+  font-size: 12.5px;
+  line-height: 1rem;
+  float: left;
+  clear: both;
 }
 
 .p-user_rates-index .list-lines tr td .rate-text a {
-    color: darkgray !important;
+  color: darkgray !important;
 }
 
 /* USER LIST EDIT FORM */
 .p-user_rates-index .b-table.list-lines .entries tr.edit-form td {
-    background-color: transparent;
-    border-spacing: 0;
-    line-height: 1;
+  background-color: transparent;
+  border-spacing: 0;
+  line-height: 1;
 }
 
 .p-user_rates-index .list-lines tr.edit-form form {
-    border: 0;
-    margin: 0;
-    padding: 10px;
-    border-radius: 5px;
+  border: 0;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .p-user_rates-index .list-lines tr.edit-form form a.remove {
-    border-radius: 3px;
-    background-color: darkred;
-    border-color: currentcolor;
-    color: var(--button-text-color);
-    line-height: 23px;
-    padding: 0 10px;
-    transition: background-color .3s ease, color .3s ease;
-    border: 0;
+  border-radius: 3px;
+  background-color: darkred;
+  border-color: currentcolor;
+  color: var(--button-text-color);
+  line-height: 23px;
+  padding: 0 10px;
+  transition: background-color .3s ease, color .3s ease;
+  border: 0;
 }
 
 .p-user_rates-index .list-lines tr.edit-form form a.remove:hover {
-    background-color: red;
+  background-color: red;
 }
 
 /* USER LIST COLLAPSED */
@@ -2572,50 +2768,51 @@ a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
 .p-animes-show .other-names,
 .p-mangas-show .other-names,
 .p-ranobe-show .other-names {
-    margin-bottom: 0;
-    border-radius: 3px;
-    background: var(--color-2);
-    border-color: var(--color-3);
+  margin-bottom: 0;
+  border-radius: 3px;
+  background: var(--color-2);
+  border-color: var(--color-3);
 }
 
 .collapsed:hover,
 .p-animes-show .other-names:hover,
 .p-mangas-show .other-names:hover,
 .p-ranobe-show .other-names:hover,
-.collapsed + .spoiler .hide-expanded:hover {
-    border-color: var(--color-3);
-    background-color: var(--color-6);
-    color: var(--headline-color);
+.collapsed+.spoiler .hide-expanded:hover {
+  border-color: var(--color-3);
+  background-color: var(--color-6);
+  color: var(--headline-color);
 }
 
-.collapsed + .spoiler .hide-expanded {
-    border-radius: 3px;
-    background: var(--color-2);
-    border-color: var(--color-3);
+.collapsed+.spoiler .hide-expanded {
+  border-radius: 3px;
+  background: var(--color-2);
+  border-color: var(--color-3);
 }
 
 /* USER LIST FOOTER */
 .p-user_rates-index .list-groups .summary.lines {
-    background-color: var(--color-2);
-    padding: 5px 10px;
-    border-radius: 3px;
-    display: inline-block;
+  background-color: var(--color-2);
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
 }
 
 .p-user_rates-index .list-groups .summary.lines.library {
-    background-color: var(--color-3);
-    border-top: 0;
-    margin: 0;
-    display: block;
+  background-color: var(--color-3);
+  border-top: 0;
+  margin: 0;
+  display: block;
 }
 
 /* USER LIST RIGHT BLOCKS */
 .b-block_list li {
-  	font-family: var(--font-main);
-    margin: 1px 0;
-    padding: 2px 5px;
-    border-radius: 3px;
+  font-family: var(--font-main);
+  margin: 1px 0;
+  padding: 2px 5px;
+  border-radius: 3px;
 }
+
 .b-block_list li span {
-    margin-top: -3px;
+  margin-top: -3px;
 }
