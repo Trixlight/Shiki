@@ -1,0 +1,413 @@
+/****************************************************************************
+=================================== Profile =================================
+****************************************************************************/
+@media only screen and (min-width: 725px) {
+  .c-brief header.head h1 {
+    color: #fff;
+  }
+
+  .c-brief header.head .notice,
+  .c-brief header.head .misc,
+  .c-brief header.head a.edit,
+  .p-profiles .profile-head .c-info .c-additionals b,
+  .p-profiles .profile-head .c-brief header h1.aliases::after,
+  .p-profiles .profile-head .c-brief header .notice a,
+  .p-profiles .profile-head .c-info .c-additionals div a,
+  .profile-actions .mail::before,
+  .profile-actions .talk::before,
+  .profile-actions .fav-remove::before,
+  .profile-actions .ban::before,
+  .profile-actions .fav-add::before,
+  .profile-actions .settings::before,
+  .profile-actions .ignore-add::before {
+    color: #e1e7f2;
+  }
+
+  .p-profiles-show .lifetime {
+    margin-top: 175px;
+    /* Аниме + Манга */
+    *margin-top: 80px;
+    /* Что-то одно */
+    *margin-top: 0;
+    /* Ничего */
+  }
+
+  .p-profiles .profile-head .c-brief .avatar .profile-actions {
+    position: absolute;
+    top: 190px;
+    right: 15px;
+    z-index: 10;
+  }
+
+  .p-profiles .profile-head .c-brief .notice {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 28px 20px;
+  }
+
+  #user_history_logs .notice {
+    display: none;
+  }
+
+  .profile-actions .mail,
+  .profile-actions .talk,
+  .profile-actions .fav-remove,
+  .profile-actions .ban,
+  .profile-actions .fav-add,
+  .profile-actions .settings,
+  .profile-actions .ignore-add,
+  .profile-actions .ignore-remove {
+    margin-left: 0;
+    padding: 10px 10px 8px;
+    border-radius: 3px;
+  }
+
+  .profile-actions .mail::before,
+  .profile-actions .talk::before,
+  .profile-actions .fav-remove::before,
+  .profile-actions .ban::before,
+  .profile-actions .fav-add::before,
+  .profile-actions .settings::before {
+    font-size: 20px;
+  }
+
+  .profile-actions .fav-remove::before {
+    color: #176093;
+  }
+
+  .profile-actions .fav-remove::before,
+  .profile-actions .fav-add::before,
+  .profile-actions .ignore-add::before,
+  .profile-actions .ignore-remove::before {
+    font-size: 22px;
+  }
+
+  .p-profiles .profile-head .c-brief header {
+    margin: -30px 0px 0px 5px;
+    text-align: left;
+  }
+
+  .p-profiles .profile-head .c-info .c-additionals {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .p-profiles .profile-head .c-info .c-additionals b {
+    display: none;
+  }
+
+  .p-profiles .profile-head .c-history {
+    margin-top: 0;
+  }
+
+  .p-profiles .profile-head .c-history.x2,
+  .p-profiles .profile-head .c-history.x3,
+  .p-profiles .profile-head .c-history.x1 {
+    position: absolute;
+    right: 15px;
+    top: 280px;
+    z-index: 1;
+  }
+
+  .p-profiles .profile-head .c-info .c-lists-info {
+    width: 49%;
+    position: absolute;
+    left: 15px;
+    top: 310px;
+    z-index: 2;
+  }
+
+  .profile-head .c-info .c-lists-info .b-stats_bar .stat_names .stat_name::after {
+    padding: 0 5px 0 0;
+    content: ",";
+  }
+
+  .b-stats_bar.anime a.title,
+  .b-stats_bar.anime .title,
+  .b-stats_bar.manga a.title,
+  .b-stats_bar.manga .title {
+    font-size: 14px;
+    margin-bottom: 0;
+    position: absolute;
+    display: block;
+    top: -30px;
+    left: 0;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: left;
+    transition: color, 0.2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: var(--headline-background-color);
+    border-left: 5px solid var(--headline-border-color);
+    line-height: 1;
+    padding: 10px;
+    border-radius: 3px;
+  }
+
+  .b-stats_bar.anime a.title:before,
+  .b-stats_bar.manga a.title::before {
+    font-family: shikimori;
+    font-feature-settings: 'liga';
+    text-transform: none;
+    letter-spacing: normal;
+    content: "";
+    color: var(--headline-arrow-color);
+    position: absolute;
+    right: 10px;
+  }
+
+  .c-lists-info .b-stats_bar.anime {
+    margin-bottom: -5px !important;
+  }
+
+  .b-stats_bar .compatibility {
+    position: absolute;
+    display: none;
+    right: 0;
+    top: -32px;
+    z-index: 10;
+    padding: 6px 10px;
+  }
+
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility .rate {
+    font-size: 12.5px;
+  }
+
+  a[href="https://shikimori.one/users?klass=manga&similar=similar"],
+  a[href="https://shikimori.one/users?klass=anime&similar=similar"] {
+    visibility: hidden;
+  }
+
+  .b-stats_bar .compatibility span.text {
+    display: none;
+  }
+
+  .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+    margin-bottom: 0;
+  }
+
+  .b-stats_bar .stat_names .stat_name .size::before,
+  .b-stats_bar .stat_names .stat_name .size::after {
+    display: none;
+  }
+
+  .cc-2>.c-column {
+    margin-right: 2%;
+    width: 49%;
+  }
+
+  .profile-content .c-left {
+    margin-bottom: 20px;
+  }
+
+  .p-profiles-show.x1200 .profile-content .c-left {
+    margin-right: 2%;
+    width: 50%;
+  }
+
+  .p-profiles-show.x1200 .profile-content .c-right {
+    width: 48%;
+  }
+
+  .p-profiles-show .lifetime {
+    margin-bottom: 15px;
+  }
+
+  .p-profiles-show .lifetime .bar {
+    border-radius: 2px;
+  }
+
+  .p-profiles-show .lifetime .label {
+    text-transform: uppercase;
+  }
+
+  .p-profiles-show .profile-content .activity .title {
+    display: none;
+  }
+
+  .profile-content>.cc-2 .c-column .cc-2a.m30 {
+    min-height: 230px;
+  }
+
+  .p-profiles-show .cc-favourites .c-column {
+    margin-bottom: 10px;
+  }
+
+  .profile-content .cc-2 .c-column .cc-2a>.c-column {
+    margin-bottom: 30px !important;
+    float: none !important;
+  }
+
+  .p-profiles .profile-head .c-brief header h1.aliases:after {
+    font-size: 15px;
+    top: -2px;
+    position: relative;
+  }
+
+  .bar.vertical {
+    border-bottom: 0;
+  }
+
+  .bar.vertical .line {
+    border-right: 1px solid transparent;
+  }
+
+  .b-stats_bar.anime .bar {
+    overflow: visible;
+  }
+
+  .b-stats_bar .bar {
+    height: 16px;
+    line-height: 16px;
+  }
+
+  .b-stats_bar .bar .first,
+  .b-stats_bar .bar .second,
+  .b-stats_bar .bar .third {
+    font-size: 12.5px;
+    height: 16px;
+    line-height: 16px;
+  }
+
+  .p-profiles-show .profile-content .graph {
+    height: 110px;
+  }
+
+  .p-profiles-show.x1200 .profile-content .graph {
+    height: 123px;
+  }
+
+  .bar.vertical .line .x_label {
+    bottom: -19px;
+    color: #fff;
+    background: #4682b4;
+    border-radius: 3px;
+    padding: 0px 5px;
+    margin-left: -10px;
+  }
+
+  .bar.vertical .line:first-child .x_label {
+    margin-left: 0;
+  }
+
+  .bar.vertical .line:last-child .x_label {
+    margin-left: -20px;
+  }
+
+  .bar.vertical .line .bar-container .bar.min {
+    border-radius: 2px;
+  }
+
+  /* Img & Video Curved Corners */
+  .b-catalog_entry .cover .image-decor img {
+    margin: -2%;
+    width: 104%;
+    max-width: 104%;
+  }
+
+  .image-cutter {
+    width: 98%;
+    height: 98%;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2px;
+  }
+
+  .image-decor>.text {
+    border-radius: 0 0 2px 2px;
+    width: 98% !important;
+  }
+
+  .b-db_entry-variant-list_item .image img,
+  .b-image img,
+  .b-video .video-link,
+  .b-db_entry>.c-image img,
+  .p-profiles .profile-head .c-history .entry img,
+  .b-badge img, .b-badge .no-image {
+    border-radius: 2px;
+  }
+
+  /*********************************/
+  .p-profiles .l-page header.head.misc {
+    overflow: visible;
+    margin: -15px -15px 30px;
+    position: relative;
+    height: 250px;
+    background-image: var(--profile-head-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px 2px 0 0;
+  }
+
+  .p-profiles .l-page header.head.misc h1 {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.5) 50%, rgb(0, 0, 0) 100%);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    padding: 28px 20px;
+    text-align: left;
+    color: #fff;
+  }
+
+  .p-profiles .l-page header.head.misc .b-breadcrumbs {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+  }
+
+  .p-profiles .profile-head .c-brief .avatar img {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 35px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 16;
+  }
+
+  .p-profiles .l-page header.head.misc::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: -20px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("https://moe.shikimori.one/system/users/x160/42277.png");
+    border-radius: 50%;
+  }
+
+  .p-profiles .l-page header.head.misc h1 a.back::before,
+  .p-profiles .l-page header.head.misc h2 a.back::before {
+    color: #fff;
+  }
+
+  .p-profiles .l-page header.head.misc .b-link {
+    color: #65c0ff;
+  }
+
+  .p-profiles .l-page .l-menu .block.avatar,
+  .p-profiles .l-page header.head.misc .misc {
+    display: none;
+  }
+}
+
+/*================КОНЕЦ СТИЛЯ ПРОФИЛЯ==============*/

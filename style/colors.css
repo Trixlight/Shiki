@@ -1,0 +1,96 @@
+/****************************************************************************
+================================== Variables ================================
+****************************************************************************/
+html {
+  --text-color: #111;
+  --text-color-dim: #333;
+  --text-color-faint: #555;
+  --color-2: whitesmoke;
+  --color-3: #eee;
+  --color-4: #fbfbfb;
+  --color-5: #f3f3f3;
+  --color-6: aliceblue;
+  --page-color: white;
+  --color-green: #b4e8b4;
+  --color-orange: #f3cf8e;
+  --color-red: #fb8c8c;
+  --button-text-color: white;
+}
+
+/* @media (prefers-color-scheme: dark) {
+html {
+    --text-color: #eee;
+    --text-color-dim: #ece8e2;
+    --text-color-faint: #cbc5bc;
+    --color-2: rgb(31, 32, 33);
+    --color-3: rgb(35, 36, 38);
+    --color-4: rgb(27, 28, 30);
+    --color-5: rgb(32, 33, 35);
+    --color-6: rgb(29, 31, 32);
+    --page-color: #191a1b;
+    --color-green: #0d320d;
+    --color-orange: #352508;
+    --color-red: #3e0a0a;
+    ---text-color: white;
+    --link-color: #72b6e4!important;
+    --link-hover-color: #fb7f37!important;
+    --link-active-color: #f91f1e!important;
+    --link-border-color: #2173ac!important;
+    --link-border-hover-color: #b74706!important;
+    --link-border-active-color: #ad0302!important;
+    --headline-color: #d6d1c9!important;
+    --headline-background-color: #242627!important;
+    --headline-border-color: #3a3f40!important;
+}
+} */
+/****************************************************************************
+=================================== Colors ==================================
+****************************************************************************/
+/* html,
+body,
+input,
+textarea,
+select,
+button,
+.l-page,
+.b-entry-info .line .key,
+.b-db_entry > .c-about .additional-links .key,
+.b-db_entry-variant-list_item > .info .line .key,
+.p-profiles .profile-head .c-history .entry .misc,
+.p-profiles-favorites .item-edit,
+.b-list_switchers .switcher.lines,
+.b-list_switchers .switcher.posters {
+    color: var(--text-color-dim);
+}
+
+.bar.horizontal .line .x_label,
+.p-user_rates-index .l-content .order-control,
+.p-user_rates-index .list-groups .summary.lines,
+.b-block_list li,
+.p-user_rates-index .list-lines tr td .episodes_total,
+.b-entry-info .line .value,
+.b-tag,
+.b-rate .text-score,
+header.head .notice,
+.b-stats_bar .title,
+.p-profiles-show .lifetime .times .time.checked,
+.b-animes-menu .total-rates,
+.b-source .contributors .key,
+.b-source .mal .key,
+.b-source .source .key,
+.b-show_more,
+.b-show_more-more .hide-more,
+.p-profiles .profile-head .c-history .entry .misc.date {
+    color: var(--text-color-faint);
+}
+
+html,
+body,
+input,
+textarea,
+select,
+button,
+.l-page {
+    background-color: var(--page-color) !important;
+    border-color: var(--headline-border-color) !important;
+} */

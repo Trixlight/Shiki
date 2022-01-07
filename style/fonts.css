@@ -1,0 +1,217 @@
+/****************************************************************************
+================================= Font-Family ===============================
+****************************************************************************/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+
+:root {
+  --font-main: Roboto;
+  --font-alt: Roboto;
+  --font-alt-text-letter-spacing: normal;
+}
+
+/****************************************************************************
+================================== Font-Size ================================
+****************************************************************************/
+.b-catalog_entry .cover .misc,
+.p-dashboards-show .midheadline .b-link,
+.p-dashboards .user_list .list-type>.title .switch,
+.p-dashboards .user_list .list-type>.title .link,
+.p-dashboards .user_list .history>.title .switch,
+.p-dashboards .user_list .history>.title .link,
+.p-dashboards .user_list .list-change .note,
+.p-dashboards .c-my_list .list-change .note,
+.bar.vertical .line .x_label,
+.p-dashboards-show .contests .contest .notice,
+.b-forums .forum .topics,
+.p-profiles .profile-head .c-history .entry .misc,
+.b-stats_bar .stat_names,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility a,
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar .compatibility span.link-replacement,
+.b-replies,
+.b-options-floated,
+.p-messages .mass-actions .action,
+.p-animes_collection-index .pagination,
+.p-mangas_collection-index .pagination,
+.p-recommendations-index .pagination,
+.b-user_rate_log .spoiler.collapse span,
+.b-user_rate_log .spoiler.collapsed span,
+.p-userlist_comparer-show .pagination,
+.b-show_more,
+.b-rate .score-notice,
+.bar.horizontal .line .x_label,
+.b-animes-menu .friend-rate .status,
+.bar.horizontal .line .bar-container .value,
+.b-summary_marker::before,
+.b-offtopic_marker::before,
+.b-shiki_editor footer .about-bb_codes,
+.bar.vertical .line .bar-container .value,
+.tipsy,
+.b-contest_match .vs .invitation, .b-contest_match .vs .vote-voted, .b-contest_match .vs .vote-abstained, .b-contest_match .vs .thanks, .b-contest_match .vs .hint, .b-contest_match .vs .action, .b-contest_match .vs .not-selected,
+header.head .misc,
+header.head a.edit,
+.p-studios .studio .animes,
+.p-studios .studio .years,
+.p-contests .contest-match .vs .help,
+.p-contests .contest-match .vs .next,
+.p-contests .contest-match .vs .finish,
+.p-contests .contest-match .vs .refrain,
+.p-contests .contest-match .vs .refrained,
+.p-contests .match-day .matches-num,
+.b-lang_trigger,
+.b-club .info,
+.b-new_marker::before,
+.b-user.detailed .info .last-online,
+.p-recommendations-index .b-header_filters .hint,
+.p-recommendations-favourites .b-header_filters .hint,
+.p-userlist_comparer .comparer table .notice,
+.p-topics .l-menu .calendar .entry .misc,
+.p-topics .l-menu .critiques .entry .misc,
+.p-topics .l-menu .clubs .entry .misc,
+.p-topics .l-menu .contests .contest .notice,
+.p-topics .l-menu .sticked-topics .topic .notice,
+.date,
+.b-tag,
+.tag-link,
+.b-topic>.inner footer .source,
+.b-user_rate-history .status-counter .status,
+.b-user_rate-history .status-counter .counter span,
+.b-log_entry .spoiler.collapse,
+.b-log_entry .spoiler.collapsed,
+.b-log_entry .spoiler.collapse span,
+.b-log_entry .spoiler.collapsed span,
+.b-js-action,
+.b-input .hint,
+time,
+.status-line,
+.status-line .comments,
+.b-critique-topic .critique-votes_count,
+.b-show_more-more .hide-more,
+.p-dashboard .l-menu .ongoing .misc,
+.p-dashboard .l-menu .season .notice,
+.p-topics .l-menu .sticky-topics .topic .notice,
+.b-hot_topics .topic,
+.b-dialog .to_dialog,
+.p-profiles-show .lifetime .title .value,
+.b-db_entry-note .name-container .b-user_rate .b-add_to_list .trigger,
+.b-db_entry-note .name-container .b-user_rate .b-add_to_list .option,
+.b-animes-menu .total-rates,
+.b-block_list li,
+.b-catalog_entry-tooltip .inner .line,
+.b-catalog_entry-tooltip .b-add_to_list .option,
+.p-profiles .profile-head .c-info .c-additionals div,
+header.head .notice,
+.b-spoiler label,
+.b-topic-preview>.inner .status-line,
+.b-topic>.inner>header .about>span,
+.b-topic>.inner>header .about a,
+.b-nothing_here,
+.b-log_entry .b-critique_votes,
+.p-achievements-global table.statistics tr th,
+input,
+select,
+button,
+textarea,
+.b-ban .duration,
+.p-db_entries-edit .b-list .sample,
+.b-achievement .c-about .hint, .b-achievement .about .hint,
+.b-achievement .c-about .percent, .b-achievement .about .percent,
+.p-profiles-show .achievements .header .size,
+.b-abuse_marker::before,
+.b-anime_status_tag::before,
+.p-contests .results .cc-result .c-rounds .label,
+.p-contests-grid .round .match a,
+.p-contests-grid .round .match p,
+.p-contests-grid .round .match .matches-num,
+.p-contests-grid .round .match .winner::before,
+.p-contests-grid .round .match .loser::before,
+.p-contests-grid .round .match .finalist::before,
+.b-user.detailed .history .line .event,
+.b-catalog_entry .cover,
+.b-db_entry-variant-list_item>.info .line,
+.b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .trigger,
+.b-db_entry-variant-list_item>.info .b-user_rate .b-add_to_list .option,
+.b-anime_status_tag,
+.misc-links a,
+.image-decor>.text,
+.episodes_total,
+.time,
+.watch-online .kind,
+.comments-collapser,
+.votes-for,
+.votes-against,
+.to-review,
+.user-rate-label,
+.review-info .label {
+  font-size: 12.5px !important;
+}
+
+.b-breadcrumbs,
+.b-catalog_entry-tooltip .inner .text,
+.p-anime_videos-index .c-video_stats,
+.subheadline .misc-link {
+  font-size: 13px !important;
+}
+
+.b-catalog_entry-tooltip .inner a.name,
+.b-link_button,
+.p-contests-show .b-catalog_entry .cover .title {
+  font-size: 13.5px !important;
+}
+
+.b-stats_bar a.title,
+.b-stats_bar .title {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.mfp-close {
+  font-size: 28px !important;
+}
+
+.p-user_rates-index .stat-categories .t0 {
+  font-size: 12px !important;
+}
+
+.p-user_rates-index .stat-categories .t1 {
+  font-size: 13px !important;
+}
+
+.p-user_rates-index .stat-categories .t2 {
+  font-size: 14px !important;
+}
+
+.p-user_rates-index .stat-categories .t3 {
+  font-size: 15px !important;
+  font-weight: bold;
+}
+
+.p-user_rates-index .stat-categories .t4 {
+  font-size: 16px !important;
+  text-transform: uppercase;
+}

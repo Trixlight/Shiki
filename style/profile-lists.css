@@ -1,0 +1,323 @@
+/* USER LIST CATEGORY LINKS & SEARCH */
+.p-user_rates-index .subheadline-buttons+.subheadline {
+  display: none;
+}
+
+.p-user_rates-index .subheadline-buttons {
+  top: 0;
+  z-index: 16;
+}
+
+.b-options-floated.mylist::before {
+  content: "Переход по спискам и Поиск";
+  display: block;
+  clear: both;
+  line-height: 1;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px !important;
+  font-size: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: var(--headline-background-color);
+  border-left: 5px solid var(--headline-border-color);
+  color: var(--headline-color);
+  font-family: var(--font-alt);
+  font-weight: 700;
+  letter-spacing: .13px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+[data-locale="en"] .b-options-floated.mylist::before {
+  content: "Jump to categories and Search";
+}
+
+.b-options-floated.mylist {
+  margin: -10px auto 0px;
+  padding: 10px 0 5px;
+  display: block;
+  position: sticky;
+  top: 45px;
+  background-color: var(--page-color);
+  z-index: 15;
+}
+
+.b-options-floated.mylist a {
+  font-size: 14px;
+  color: var(--text-color);
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0px 5px 5px 0;
+  width: auto;
+  font-weight: bold;
+  padding: 5px 5px 5px 7px;
+  border-radius: 3px;
+  background: var(--headline-background-color);
+  opacity: 1;
+}
+
+.p-user_rates-index .l-content .b-options-floated span::before,
+.p-user_rates-index .l-content .b-options-floated span::after {
+  color: var(--text-color);
+}
+
+.b-options-floated.mylist a::after {
+  display: none;
+}
+
+.b-options-floated.mylist a[data-id="planned"],
+.b-options-floated.mylist a[data-id="on_hold"],
+.b-options-floated.mylist a[data-id="watching"],
+.b-options-floated.mylist a[data-id="rewatching"] {
+  background-color: var(--color-green);
+}
+
+.b-options-floated.mylist a[data-id="completed"] {
+  background-color: var(--color-orange);
+}
+
+.b-options-floated.mylist a[data-id="dropped"] {
+  background-color: var(--color-red);
+}
+
+.b-options-floated.mylist a:hover {
+  color: var(--text-color-dim);
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.b-collection_search {
+  display: block;
+  position: sticky;
+  top: 55px;
+  background-color: var(--page-color);
+  z-index: 15;
+}
+
+.b-collection_search .field input {
+  border: 1px solid rgba(172, 177, 180, .4);
+  padding: 0 42px 0 15px;
+  border-radius: 3px;
+}
+
+/* USER LIST HEADERS */
+.mylist~.list-groups .status-0 .subheadline,
+.mylist~.list-groups .status-1 .subheadline,
+.mylist~.list-groups .status-9 .subheadline,
+.mylist~.list-groups .status-3 .subheadline {
+  border-left-color: green;
+  background-color: var(--color-green);
+  color: var(--text-color);
+}
+
+.mylist~.list-groups .status-2 .subheadline {
+  border-left-color: orange;
+  background-color: var(--color-orange);
+  color: var(--text-color);
+}
+
+.mylist~.list-groups .status-4 .subheadline {
+  border-left-color: red;
+  background-color: var(--color-red);
+  color: var(--text-color);
+}
+
+/* USER LIST TABLE */
+.p-user_rates-index .list-lines {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  table-layout: fixed;
+}
+
+/* USER LIST TD TR */
+.p-user_rates-index .list-lines .entries tr,
+.p-user_rates-index .list-lines .entries td {
+  line-height: 2;
+  vertical-align: middle;
+}
+
+.p-user_rates-index .list-lines thead .border th {
+  background-color: var(--color-2);
+  padding-top: 2px;
+}
+
+.p-user_rates-index .list-lines {
+  border-bottom: 2px solid var(--color-2);
+}
+
+.p-user_rates-index .list-lines .entries tr:nth-child(2n+1) td {
+  background-color: var(--color-2);
+}
+
+.p-user_rates-index .list-lines tr:nth-child(2n+1) td:nth-child(2n+1) {
+  background-color: var(--color-3);
+  border-left: 1px solid var(--color-3);
+}
+
+.p-user_rates-index .list-lines .entries tr:nth-child(2n) td {
+  background-color: var(--color-4);
+}
+
+.p-user_rates-index .list-lines tr:nth-child(2n) td:nth-child(2n+1) {
+  background-color: var(--color-5);
+  border-left: 1px solid var(--color-5);
+}
+
+.p-user_rates-index .list-lines .entries tr td:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.p-user_rates-index .list-lines .entries tr td:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.p-user_rates-index .list-lines .selectable:hover {
+  background-color: transparent;
+}
+
+.p-user_rates-index .list-lines .selectable:hover td {
+  background-color: var(--color-6) !important;
+  border-left-color: var(--color-6) !important;
+}
+
+.p-user_rates-index .list-lines tr td .new-value .item-add {
+  top: -16px !important;
+  display: inline-block;
+  position: relative;
+}
+
+.p-user_rates-index .list-lines tr .index {
+  color: inherit;
+  padding-right: 0;
+}
+
+.p-user_rates-index .list-lines tr .name {
+  padding: 3px 10px;
+  width: auto;
+}
+
+.p-user_rates-index .list-lines tr .name-en {
+  display: none;
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  clear: both;
+  text-overflow: ellipsis;
+  margin-bottom: -5px;
+  font-size: 11px;
+  color: gray;
+}
+
+.p-user_rates-index .list-lines tr .name-ru {
+  display: block;
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
+  clear: both;
+  text-overflow: ellipsis;
+}
+
+.p-user_rates-index .list-lines tr td .rewatches,
+.p-user_rates-index .list-lines tr td .ongoing,
+.p-user_rates-index .list-lines tr td .anons {
+  float: left;
+}
+
+.p-user_rates-index .list-lines tr td .rate-text {
+  color: darkgray;
+  font-size: 12.5px;
+  line-height: 1rem;
+  float: left;
+  clear: both;
+}
+
+.p-user_rates-index .list-lines tr td .rate-text a {
+  color: darkgray !important;
+}
+
+/* USER LIST EDIT FORM */
+.p-user_rates-index .b-table.list-lines .entries tr.edit-form td {
+  background-color: transparent;
+  border-spacing: 0;
+  line-height: 1;
+}
+
+.p-user_rates-index .list-lines tr.edit-form form {
+  border: 0;
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.p-user_rates-index .list-lines tr.edit-form form a.remove {
+  border-radius: 3px;
+  background-color: darkred;
+  border-color: currentcolor;
+  color: var(--button-text-color);
+  line-height: 23px;
+  padding: 0 10px;
+  transition: background-color .3s ease, color .3s ease;
+  border: 0;
+}
+
+.p-user_rates-index .list-lines tr.edit-form form a.remove:hover {
+  background-color: red;
+}
+
+/* USER LIST COLLAPSED */
+.collapsed,
+.p-animes-show .other-names,
+.p-mangas-show .other-names,
+.p-ranobe-show .other-names {
+  margin-bottom: 0;
+  border-radius: 3px;
+  background: var(--color-2);
+  border-color: var(--color-3);
+}
+
+.collapsed:hover,
+.p-animes-show .other-names:hover,
+.p-mangas-show .other-names:hover,
+.p-ranobe-show .other-names:hover,
+.collapsed+.spoiler .hide-expanded:hover {
+  border-color: var(--color-3);
+  background-color: var(--color-6);
+  color: var(--headline-color);
+}
+
+.collapsed+.spoiler .hide-expanded {
+  border-radius: 3px;
+  background: var(--color-2);
+  border-color: var(--color-3);
+}
+
+/* USER LIST FOOTER */
+.p-user_rates-index .list-groups .summary.lines {
+  background-color: var(--color-2);
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.p-user_rates-index .list-groups .summary.lines.library {
+  background-color: var(--color-3);
+  border-top: 0;
+  margin: 0;
+  display: block;
+}
+
+/* USER LIST RIGHT BLOCKS */
+.b-block_list li {
+  font-family: var(--font-main);
+  margin: 1px 0;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.b-block_list li span {
+  margin-top: -3px;
+}
