@@ -36,11 +36,11 @@
 }
 
 /** Импорт файлов стиля с GitHub **/
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/colors.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/fonts.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/main.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-history.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-graphs.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-lists.css");
+@import url("https://raw.githubusercontent.com/Trixlight/Shiki-Enchanced/main/style/colors.css");
+@import url("https://raw.githubusercontent.com/Trixlight/Shiki-Enchanced/main/style/fonts.css");
+@import url("https://raw.githubusercontent.com/Trixlight/Shiki-Enchanced/main/style/main.css");
+@import url("https://raw.githubusercontent.com/Trixlight/Shiki-Enchanced/main/style/profile.css");
+@import url("https://raw.githubusercontent.com/Trixlight/Shiki-Enchanced/main/style/profile-history.css");
+@import url("https://raw.githubusercontent.com/Trixlight/Shiki-Enchanced/main/style/profile-graphs.css");
+@import url("https://raw.githubusercontent.com/Trixlight/Shiki-Enchanced/main/style/profile-lists.css");
 ```
