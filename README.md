@@ -1,6 +1,12 @@
-# Установка
-1. Скопируйте код ниже
-2. На Шики перейдите в Настройки > Внешний вид сайта > Стили сайта
+# Shiki Enhanced Theme
+Для личного использования, в целом.
+Увеличенный размер шрифта, закруглённые углы, мелкие фиксы кривых ручек morr'a. Также переделанный Профиль и Списки просмотренного.
+
+Код в полнейшем беспорядке, да и к тому же не редактировался с ~2017. Я предупредил.
+
+### Установка
+1. Скопируйте код из блока ниже
+2. На [Шикимори](shikimori.one) перейдите в Настройки > Внешний вид сайта > Стили сайта
 3. Вставте код в поле CSS
 4. (Необязательно) Замените ссылки на фоновые изображения
 
@@ -10,8 +16,8 @@
 ** Используются по умолчанию
 **/
 :root {
-  --site-bg: url("");
-  --profile-head-bg: url("");
+  --site-bg: url("https://i.imgur.com/XEYoTw4.jpg"); /* Фон сайта */
+  --profile-head-bg: url("https://i.imgur.com/KTN16kQ.jpg"); /* Фон обложки профиля */
 }
 
 /**
@@ -24,16 +30,13 @@
 **/
 @media (prefers-color-scheme: dark) {
   :root {
-    --site-bg: url("https://i.imgur.com/XEYoTw4.jpg");
-    --profile-head-bg: url("https://i.imgur.com/KTN16kQ.jpg");
-  }
+  	--site-bg: url("https://i.imgur.com/XEYoTw4.jpg"); /* Фон сайта */
+  	--profile-head-bg: url("https://i.imgur.com/KTN16kQ.jpg"); /* Фон обложки профиля */
+	}
 }
 
-/**
-** Импорт файлов стиля с GitHub
-** Обновление кеша @import-стилей:
-** https://shikimori.one/tests/reset_styles_cache
-**/
-
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/global.css");
+/** Импорт файлов стиля с GitHub **/
+@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/colors.css");
+@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/fonts.css");
+@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/main.css");
 ```
