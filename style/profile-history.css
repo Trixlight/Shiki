@@ -30,7 +30,7 @@
 /****************************************************************************
 ======================== Отображение дат в истории ==========================
 ****************************************************************************/
-.p-user_history-index .history-page .history-interval p .date::after {
+.p-user_history-index .history-page .history-interval p .date::before {
   display: inline-block;
   vertical-align: middle;
   font-family: var(--font-main);
