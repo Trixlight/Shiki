@@ -97,7 +97,7 @@
 .p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-05-']::after {--HD-month: 'may';}
 .p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-06-']::after {--HD-month: 'jun';}
 .p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-07-']::after {--HD-month: 'jul';}
-.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-08-']:after:after {--HD-month: 'aug';}
+.p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-08-']::after {--HD-month: 'aug';}
 .p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-09-']::after {--HD-month: 'sep';}
 .p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-10-']::after {--HD-month: 'okt';}
 .p-user_history-index[data-locale="en"] .history-page .history-interval p .date[datetime*='-11-']::after {--HD-month: 'nov';}
