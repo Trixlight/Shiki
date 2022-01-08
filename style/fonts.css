@@ -5,39 +5,49 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
+  src: local('Roboto'), local('Roboto-Regular'),
+    url(https://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  src: local('Roboto'), local('Roboto-Regular'),
+    url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url(https://fonts.gstatic.com/s/roboto/v15/oHi30kwQWvpCWqAhzHcCSBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  src: local('Roboto Medium'), local('Roboto-Medium'),
+    url(https://fonts.gstatic.com/s/roboto/v15/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
 }
 
 :root {
   --font-main: Roboto;
   --font-alt: Roboto;
   --font-alt-text-letter-spacing: normal;
+  --font-alt-hadline-letter-spacing: normal;
 }
 
 /****************************************************************************
 ================================== Font-Size ================================
 ****************************************************************************/
+body {
+  --font-size-base-desktop: 12.5px;
+  --font-size-header: 15px;
+}
+
 .b-catalog_entry .cover .misc,
 .p-dashboards-show .midheadline .b-link,
 .p-dashboards .user_list .list-type>.title .switch,
@@ -168,7 +178,7 @@ textarea,
 .to-review,
 .user-rate-label,
 .review-info .label {
-  font-size: 12.5px !important;
+  font-size: var(--font-size-base-desktop) !important;
 }
 
 .b-breadcrumbs,
@@ -184,16 +194,11 @@ textarea,
   font-size: 13.5px !important;
 }
 
-.b-stats_bar a.title,
-.b-stats_bar .title {
-  font-size: 14px;
-  margin-bottom: 3px;
-}
-
 .mfp-close {
   font-size: 28px !important;
 }
 
+/* Блоки Жанров и Издателей */
 .p-user_rates-index .stat-categories .t0 {
   font-size: 12px !important;
 }

@@ -1,8 +1,10 @@
-/*  */
+/****************************************************************************
+======================= Графики просмотренного в профиле ====================
+****************************************************************************/
 @media only screen and (min-width: 915px) {
 
-  /*COLORS*/
-  /*Просмотрено*/
+  /* COLORS */
+  /* Просмотрено */
   .c-lists-info .b-stats_bar .bar>div.first:before,
   .c-lists-info .b-stats_bar .bar>div.first:after,
   .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="completed"]:before {
@@ -10,7 +12,7 @@
     background-color: var(--color-orange);
   }
 
-  /*Запланировано*/
+  /* Запланировано */
   .c-lists-info .b-stats_bar .bar>div.second:before,
   .c-lists-info .b-stats_bar .bar>div.second:after,
   .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="planned"]:before,
@@ -20,19 +22,19 @@
     background-color: var(--color-green);
   }
 
-  /*Оба Графика Брошено*/
+  /* Оба Графика Брошено */
   .c-lists-info .b-stats_bar .bar,
   .c-lists-info .b-stats_bar .stat_names .stat_name a[href*="dropped"]:before {
     border-color: transparent;
     background-color: var(--color-red);
   }
 
-  /*Дырка в графике указать, transparent для прозрачной дырки*/
+  /* Дырка в графике указать, transparent для прозрачной дырки */
   .c-lists-info .b-stats_bar .bar:before {
     background: var(--color-7);
   }
 
-  /*COLORS:END*/
+  /* COLORS:END */
   .c-lists-info .b-stats_bar {
     width: 49%;
     display: inline-block;

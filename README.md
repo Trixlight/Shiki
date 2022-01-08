@@ -1,5 +1,6 @@
 # Shiki Enhanced Theme
 Для личного использования, в целом.
+
 Увеличенный размер шрифта, закруглённые углы, мелкие фиксы. Также переделанный Профиль и Списки просмотренного.
 
 Код в полнейшем беспорядке, да и к тому же не редактировался с ~2017. Я предупредил.
@@ -30,11 +31,23 @@
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/fonts.css");
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/main.css");
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/menu.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile.css");
-@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-history.css");
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-graphs.css");
+@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-history.css");
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-lists.css");
+@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile.css");
 ```
+
+## Прогресс переписывания кода
+- [ ] colors  
+- [ ] fonts 
+- [ ] main
+- [ ] menu
+- [ ] profile-graphs
+- [x] profile-history
+- [ ] profile-lists
+- [ ] profile
+
+
 ## Credits
 Тёмный фон: [https://www.pixiv.net/en/artworks/62824816](https://www.pixiv.net/en/artworks/62824816)   
 Тёмный фон шапки профиля: ???   

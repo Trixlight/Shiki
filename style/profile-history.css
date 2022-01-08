@@ -33,7 +33,7 @@
 .p-user_history-index .history-page .history-interval p .date::after {
   display: inline-block;
   font-family: var(--font-main);
-  font-size: 12.5px;
+  font-size: var(--font-size-base-desktop);
   margin-left: 5px;
 }
 

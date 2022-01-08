@@ -16,16 +16,12 @@
   padding: 10px;
   border-radius: 3px;
   margin-bottom: 5px !important;
-  font-size: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  font-size: var(--font-size-header);
   background: var(--headline-background-color);
   border-left: 5px solid var(--headline-border-color);
   color: var(--headline-color);
-  font-family: var(--font-alt);
+  font-family: var(--font-main);
   font-weight: 700;
-  letter-spacing: .13px;
   position: relative;
   text-transform: uppercase;
 }
@@ -139,30 +135,30 @@
 }
 
 .p-user_rates-index .list-lines thead .border th {
-  background-color: var(--color-2);
+  background-color: var(--lists-odd-bg);
   padding-top: 2px;
 }
 
 .p-user_rates-index .list-lines {
-  border-bottom: 2px solid var(--color-2);
+  border-bottom: 2px solid var(--lists-odd-bg);
 }
 
-.p-user_rates-index .list-lines .entries tr:nth-child(2n+1) td {
-  background-color: var(--color-2);
+.p-user_rates-index .list-lines .entries tr:nth-child(odd) td {
+  background-color: var(--lists-odd-bg);
 }
 
-.p-user_rates-index .list-lines tr:nth-child(2n+1) td:nth-child(2n+1) {
-  background-color: var(--color-3);
-  border-left: 1px solid var(--color-3);
+.p-user_rates-index .list-lines tr:nth-child(odd) td:nth-child(odd) {
+  background-color: var(--lists-odd-bg-alt);
+  border-left: 1px solid var(--lists-odd-bg-alt);
 }
 
-.p-user_rates-index .list-lines .entries tr:nth-child(2n) td {
-  background-color: var(--color-4);
+.p-user_rates-index .list-lines .entries tr:nth-child(even) td {
+  background-color: var(--lists-even-bg);
 }
 
-.p-user_rates-index .list-lines tr:nth-child(2n) td:nth-child(2n+1) {
-  background-color: var(--color-5);
-  border-left: 1px solid var(--color-5);
+.p-user_rates-index .list-lines tr:nth-child(even) td:nth-child(odd) {
+  background-color: var(--lists-even-bg-alt);
+  border-left: 1px solid var(--lists-even-bg-alt);
 }
 
 .p-user_rates-index .list-lines .entries tr td:first-child {
@@ -178,8 +174,8 @@
 }
 
 .p-user_rates-index .list-lines .selectable:hover td {
-  background-color: var(--color-6) !important;
-  border-left-color: var(--color-6) !important;
+  background-color: var(--lists-hover) !important;
+  border-left-color: var(--lists-hover) !important;
 }
 
 .p-user_rates-index .list-lines tr td .new-value .item-add {
@@ -228,15 +224,15 @@
 }
 
 .p-user_rates-index .list-lines tr td .rate-text {
-  color: darkgray;
-  font-size: 12.5px;
+  color: var(--text-color-faint);
+  font-size: var(--font-size-base-desktop);
   line-height: 1rem;
   float: left;
   clear: both;
 }
 
 .p-user_rates-index .list-lines tr td .rate-text a {
-  color: darkgray !important;
+  color: var(--text-color-faint) !important;
 }
 
 /* USER LIST EDIT FORM */
@@ -265,7 +261,7 @@
 }
 
 .p-user_rates-index .list-lines tr.edit-form form a.remove:hover {
-  background-color: red;
+  background-color: var(--color-red);
 }
 
 /* USER LIST COLLAPSED */
@@ -275,8 +271,8 @@
 .p-ranobe-show .other-names {
   margin-bottom: 0;
   border-radius: 3px;
-  background: var(--color-2);
-  border-color: var(--color-3);
+  background-color: var(--lists-odd-bg);
+  border-color: var(--lists-even-bg);
 }
 
 .collapsed:hover,
@@ -284,27 +280,27 @@
 .p-mangas-show .other-names:hover,
 .p-ranobe-show .other-names:hover,
 .collapsed+.spoiler .hide-expanded:hover {
-  border-color: var(--color-3);
-  background-color: var(--color-6);
-  color: var(--headline-color);
+  background-color: var(--lists-hover);
+  border-color: var(--lists-even-bg);
+  color: var(--text-color);
 }
 
 .collapsed+.spoiler .hide-expanded {
   border-radius: 3px;
-  background: var(--color-2);
-  border-color: var(--color-3);
+  background: var(--lists-odd-bg);
+  border-color: var(--lists-even-bg);
 }
 
 /* USER LIST FOOTER */
 .p-user_rates-index .list-groups .summary.lines {
-  background-color: var(--color-2);
+  background-color: var(--lists-odd-bg);
   padding: 5px 10px;
   border-radius: 3px;
   display: inline-block;
 }
 
 .p-user_rates-index .list-groups .summary.lines.library {
-  background-color: var(--color-3);
+  background-color: var(--lists-even-bg);
   border-top: 0;
   margin: 0;
   display: block;
