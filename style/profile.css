@@ -24,7 +24,7 @@
   }
 
   .p-profiles-show .lifetime {
-    margin-top: 175px;
+    margin-top: 180px;
     /* Аниме + Манга */
     *margin-top: 80px;
     /* Что-то одно */
@@ -131,19 +131,13 @@
   .b-stats_bar.anime .title,
   .b-stats_bar.manga a.title,
   .b-stats_bar.manga .title {
-    font-size: 14px;
-    margin-bottom: 0;
+    font-size: var(--font-size-header);
     position: absolute;
     display: block;
     top: -30px;
     left: 0;
     text-transform: uppercase;
     width: 100%;
-    text-align: left;
-    transition: color, 0.2s;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     background: var(--headline-background-color);
     border-left: 5px solid var(--headline-border-color);
     line-height: 1;
@@ -217,7 +211,7 @@
   }
 
   .p-profiles-show .lifetime {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .p-profiles-show .lifetime .bar {
@@ -375,6 +369,11 @@
   .p-profiles .l-page .l-menu .block.avatar,
   .p-profiles .l-page header.head.misc .misc {
     display: none;
+  }
+
+  /* Блок Достижений */
+  .p-profiles .achievements .cc-3 > .c-column {
+    margin-bottom: 0;
   }
 }
 

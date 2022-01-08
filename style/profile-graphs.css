@@ -30,7 +30,7 @@
 
   /* Дырка в графике */
   .c-lists-info .b-stats_bar .bar:before {
-    background: var(--color-7);
+    background: var(--page-color);
   }
 
   /* COLORS:END */
@@ -46,7 +46,7 @@
   }
 
   .c-lists-info .b-stats_bar .stat_names .stat_name:after {
-    display: none
+    display: none;
   }
 
   /* Блок списка */
@@ -61,7 +61,7 @@
   /* Ссылка */
   .c-lists-info .b-stats_bar .stat_names .stat_name a {
     display: inline-block;
-    font-size: 12.5px;
+    font-size: var(--font-size-base-desktop);
     position: relative;
     line-height: 20px;
     color: var(--link-color);
@@ -110,10 +110,7 @@
   }
 
   .c-lists-info .b-stats_bar .bar>div {
-    clip: rect(0px,
-      100px,
-      100px,
-      50px);
+    clip: rect(0px, 100px, 100px, 50px);
     background-color: transparent !important;
     font-size: 0 !important;
     position: absolute;
@@ -127,421 +124,417 @@
     position: absolute;
     right: 0;
     border: 50px solid #333;
-    clip: rect(0px,
-      50px,
-      100px,
-      0px);
+    clip: rect(0px, 50px, 100px, 0px);
     border-radius: 50%;
     transform: rotate(0deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div.third {
-    display: none
+    display: none;
   }
 
   .c-lists-info .b-stats_bar .bar>div.second {
-    transform: scale(-1,
-      1)
+    transform: scale(-1, 1);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 1."]:before {
-    transform: rotate(3.6deg)
+    transform: rotate(3.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 2."]:before {
-    transform: rotate(7.2deg)
+    transform: rotate(7.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 3."]:before {
-    transform: rotate(10.8deg)
+    transform: rotate(10.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 4."]:before {
-    transform: rotate(14.4deg)
+    transform: rotate(14.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 5."]:before {
-    transform: rotate(18deg)
+    transform: rotate(18deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 6."]:before {
-    transform: rotate(21.6deg)
+    transform: rotate(21.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 7."]:before {
-    transform: rotate(25.2deg)
+    transform: rotate(25.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 8."]:before {
-    transform: rotate(28.8deg)
+    transform: rotate(28.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 9."]:before {
-    transform: rotate(32.4deg)
+    transform: rotate(32.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 10."]:before {
-    transform: rotate(36deg)
+    transform: rotate(36deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 11."]:before {
-    transform: rotate(39.6deg)
+    transform: rotate(39.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 12."]:before {
-    transform: rotate(43.2deg)
+    transform: rotate(43.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 13."]:before {
-    transform: rotate(46.8deg)
+    transform: rotate(46.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 14."]:before {
-    transform: rotate(50.4deg)
+    transform: rotate(50.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 15."]:before {
-    transform: rotate(54deg)
+    transform: rotate(54deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 16."]:before {
-    transform: rotate(57.6deg)
+    transform: rotate(57.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 17."]:before {
-    transform: rotate(61.2deg)
+    transform: rotate(61.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 18."]:before {
-    transform: rotate(64.8deg)
+    transform: rotate(64.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 19."]:before {
-    transform: rotate(68.4deg)
+    transform: rotate(68.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 20."]:before {
-    transform: rotate(72deg)
+    transform: rotate(72deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 21."]:before {
-    transform: rotate(75.6deg)
+    transform: rotate(75.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 22."]:before {
-    transform: rotate(79.2deg)
+    transform: rotate(79.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 23."]:before {
-    transform: rotate(82.8deg)
+    transform: rotate(82.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 24."]:before {
-    transform: rotate(86.4deg)
+    transform: rotate(86.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 25."]:before {
-    transform: rotate(90deg)
+    transform: rotate(90deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 26."]:before {
-    transform: rotate(93.6deg)
+    transform: rotate(93.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 27."]:before {
-    transform: rotate(97.2deg)
+    transform: rotate(97.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 28."]:before {
-    transform: rotate(100.8deg)
+    transform: rotate(100.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 29."]:before {
-    transform: rotate(104.4deg)
+    transform: rotate(104.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 30."]:before {
-    transform: rotate(108deg)
+    transform: rotate(108deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 31."]:before {
-    transform: rotate(111.6deg)
+    transform: rotate(111.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 32."]:before {
-    transform: rotate(115.2deg)
+    transform: rotate(115.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 33."]:before {
-    transform: rotate(118.8deg)
+    transform: rotate(118.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 34."]:before {
-    transform: rotate(122.4deg)
+    transform: rotate(122.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 35."]:before {
-    transform: rotate(126deg)
+    transform: rotate(126deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 36."]:before {
-    transform: rotate(129.6deg)
+    transform: rotate(129.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 37."]:before {
-    transform: rotate(133.2deg)
+    transform: rotate(133.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 38."]:before {
-    transform: rotate(136.8deg)
+    transform: rotate(136.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 39."]:before {
-    transform: rotate(140.4deg)
+    transform: rotate(140.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 40."]:before {
-    transform: rotate(144deg)
+    transform: rotate(144deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 41."]:before {
-    transform: rotate(147.6deg)
+    transform: rotate(147.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 42."]:before {
-    transform: rotate(151.2deg)
+    transform: rotate(151.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 43."]:before {
-    transform: rotate(154.8deg)
+    transform: rotate(154.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 44."]:before {
-    transform: rotate(158.4deg)
+    transform: rotate(158.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 45."]:before {
-    transform: rotate(162deg)
+    transform: rotate(162deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 46."]:before {
-    transform: rotate(165.6deg)
+    transform: rotate(165.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 47."]:before {
-    transform: rotate(169.2deg)
+    transform: rotate(169.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 48."]:before {
-    transform: rotate(172.8deg)
+    transform: rotate(172.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 49."]:before {
-    transform: rotate(176.4deg)
+    transform: rotate(176.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 50."]:before {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 51."]:before {
-    transform: rotate(183.6deg)
+    transform: rotate(183.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 52."]:before {
-    transform: rotate(187.2deg)
+    transform: rotate(187.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 53."]:before {
-    transform: rotate(190.8deg)
+    transform: rotate(190.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 54."]:before {
-    transform: rotate(194.4deg)
+    transform: rotate(194.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 55."]:before {
-    transform: rotate(198deg)
+    transform: rotate(198deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 56."]:before {
-    transform: rotate(201.6deg)
+    transform: rotate(201.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 57."]:before {
-    transform: rotate(205.2deg)
+    transform: rotate(205.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 58."]:before {
-    transform: rotate(208.8deg)
+    transform: rotate(208.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 59."]:before {
-    transform: rotate(212.4deg)
+    transform: rotate(212.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 60."]:before {
-    transform: rotate(216deg)
+    transform: rotate(216deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 61."]:before {
-    transform: rotate(219.6deg)
+    transform: rotate(219.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 62."]:before {
-    transform: rotate(223.2deg)
+    transform: rotate(223.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 63."]:before {
-    transform: rotate(226.8deg)
+    transform: rotate(226.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 64."]:before {
-    transform: rotate(230.4deg)
+    transform: rotate(230.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 65."]:before {
-    transform: rotate(234deg)
+    transform: rotate(234deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 66."]:before {
-    transform: rotate(237.66deg)
+    transform: rotate(237.66deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 67."]:before {
-    transform: rotate(241.2deg)
+    transform: rotate(241.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 68."]:before {
-    transform: rotate(244.8deg)
+    transform: rotate(244.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 69."]:before {
-    transform: rotate(248.4deg)
+    transform: rotate(248.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 70."]:before {
-    transform: rotate(252deg)
+    transform: rotate(252deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 71."]:before {
-    transform: rotate(255.6deg)
+    transform: rotate(255.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 72."]:before {
-    transform: rotate(259.2deg)
+    transform: rotate(259.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 73."]:before {
-    transform: rotate(262.8deg)
+    transform: rotate(262.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 74."]:before {
-    transform: rotate(266.4deg)
+    transform: rotate(266.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 75."]:before {
-    transform: rotate(27deg)
+    transform: rotate(27deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 76."]:before {
-    transform: rotate(273.6deg)
+    transform: rotate(273.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 77."]:before {
-    transform: rotate(277.2deg)
+    transform: rotate(277.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 78."]:before {
-    transform: rotate(280.8deg)
+    transform: rotate(280.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 79."]:before {
-    transform: rotate(284.4deg)
+    transform: rotate(284.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 80."]:before {
-    transform: rotate(288deg)
+    transform: rotate(288deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 81."]:before {
-    transform: rotate(291.6deg)
+    transform: rotate(291.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 82."]:before {
-    transform: rotate(295.2deg)
+    transform: rotate(295.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 83."]:before {
-    transform: rotate(298.8deg)
+    transform: rotate(298.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 84."]:before {
-    transform: rotate(302.4deg)
+    transform: rotate(302.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 85."]:before {
-    transform: rotate(306deg)
+    transform: rotate(306deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 86."]:before {
-    transform: rotate(309.6deg)
+    transform: rotate(309.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 87."]:before {
-    transform: rotate(313.2deg)
+    transform: rotate(313.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 88."]:before {
-    transform: rotate(316.8deg)
+    transform: rotate(316.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 89."]:before {
-    transform: rotate(320.4deg)
+    transform: rotate(320.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 90."]:before {
-    transform: rotate(324deg)
+    transform: rotate(324deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 91."]:before {
-    transform: rotate(327deg)
+    transform: rotate(327deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 92."]:before {
-    transform: rotate(331.2deg)
+    transform: rotate(331.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 93."]:before {
-    transform: rotate(334.8deg)
+    transform: rotate(334.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 94."]:before {
-    transform: rotate(338.4deg)
+    transform: rotate(338.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 95."]:before {
-    transform: rotate(342deg)
+    transform: rotate(342deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 96."]:before {
-    transform: rotate(345.6deg)
+    transform: rotate(345.6deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 97."]:before {
-    transform: rotate(349.2deg)
+    transform: rotate(349.2deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 98."]:before {
-    transform: rotate(352.8deg)
+    transform: rotate(352.8deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 99."]:before {
-    transform: rotate(356.4deg)
+    transform: rotate(356.4deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 100."]:before {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 
   .c-lists-info .b-stats_bar .bar>div[style*="width: 51."]:after,
@@ -647,9 +640,6 @@
   .c-lists-info .b-stats_bar .bar>div[style*="width: 98."],
   .c-lists-info .b-stats_bar .bar>div[style*="width: 99."],
   .c-lists-info .b-stats_bar .bar>div[style*="width: 100."] {
-    clip: rect(auto,
-      auto,
-      auto,
-      auto);
+    clip: rect(auto, auto, auto, auto);
   }
 }
