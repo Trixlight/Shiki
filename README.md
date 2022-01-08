@@ -34,6 +34,7 @@
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-graphs.css");
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-history.css");
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-lists.css");
+@import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile-settings.css");
 @import url("https://raw.githubusercontent.com/Trixlight/shiki/main/style/profile.css");
 ```
 
@@ -45,6 +46,7 @@
 - [ ] profile-graphs
 - [x] profile-history
 - [x] profile-lists
+- [x] profile-settings
 - [ ] profile
 
 

@@ -1,0 +1,118 @@
+/*---------------------------------------------------------------------------
+================================== Настройки ================================
+---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
+
+  /* Содержимое страницы */
+  .p-profiles-edit .edit-page {
+    width: calc(100% - 277px);
+    margin-left: auto;
+  }
+
+  /* Меню */
+  .p-profiles-edit .b-options-floated {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 35px;
+    width: 240px;
+  }
+
+  /* Ссылки в меню */
+  .p-profiles-edit .b-options-floated a {
+    display: list-item;
+    list-style: circle;
+    list-style-position: inside;
+    line-height: 1;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: var(--headline-background-color);
+    color: var(--headline-color);
+    font-family: var(--font-alt);
+    font-weight: 700;
+    margin-bottom: 5px;
+    position: relative;
+  }
+
+  /* Цвет ссылок при наведении */
+  .p-profiles-edit .b-options-floated a:hover {
+    color: var(--link-hover-color);
+  }
+
+  /* Цвет активной ссылки */
+  .p-profiles-edit .b-options-floated a.selected {
+    color: var(--link-active-color);
+  }
+
+  /* Скрываем стандартный разделитель "/" */
+  .p-profiles-edit .b-options-floated a::after {
+    display: none;
+  }
+
+  /* Вид заголовков */
+  .user_nickname label,
+  .user_email label,
+  .user_locale label,
+  .user_website label,
+  .user_sex label,
+  .user_birth_on label,
+  .user_preferences_favorites_in_profile label,
+  .user_preferences_body_width label,
+  .user_preferences_dashboard_type label,
+  .user_preferences_list_privacy label,
+  .user_preferences_comment_policy label,
+  .user_preferences_statistics_start_on label,
+  .p-profiles-edit .mischeadline {
+    font-weight: bold;
+    font-size: 13.5px !important;
+  }
+
+  /* Подкатегория - Аккаунт */
+  .p-profiles-edit .user_preferences_russian_genres {
+    margin-bottom: 3px !important;
+  }
+
+  /* Вид заголовка с выбором аватара */
+  .user_avatar label {
+    line-height: 1;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: var(--headline-background-color);
+    border-left: 5px solid var(--headline-border-color);
+    color: var(--headline-color);
+    font-family: var(--font-alt);
+    font-weight: 700;
+    margin-bottom: 10px;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  /* Подкатегория - Профиль */
+  .p-profiles-edit .user_preferences_anime_in_profile,
+  .p-profiles-edit .user_preferences_comments_in_profile {
+    margin-bottom: 3px !important;
+  }
+
+  /* Подкатегория - Внешний вид сайта */
+  .p-profiles-edit .b-edit_styles .c-column:last-child {
+    display: none;
+  }
+
+  /* Подкатегория - Уведомления */
+  .p-profiles-edit .b-input [for=user_notification_settings_any_released],
+  .p-profiles-edit .b-input [for=user_notification_settings_my_episode],
+  .p-profiles-edit .b-input [for=user_notification_settings_private_message_email] {
+    margin-bottom: 18px !important;
+  }
+
+  /* Подкатегория - Прочее */
+  .p-profiles-edit .b-input.user_preferences_is_comments_auto_collapsed {
+    margin-bottom: 3px !important;
+  }
+}

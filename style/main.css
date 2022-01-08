@@ -435,7 +435,7 @@ body {
   }
 
   /*** ***/
-  #toast-container {
+  .toastify-top {
     top: 65px !important;
   }
 

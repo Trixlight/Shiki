@@ -66,13 +66,13 @@
   /* Цвет скобок "()" */
   .b-options-floated.mylist span::before,
   .b-options-floated.mylist span::after {
-    color: var(--text-color);
+    color: var(--text-color) !important;
   }
 
   /* Цвет скобок "()" при активной категории */
   .b-options-floated.mylist a.selected span::before,
   .b-options-floated.mylist a.selected span::after {
-    color: var(--link-hover-color);
+    color: var(--link-hover-color) !important;
   }
 
   /* Скрываем стандартный разделитель "/" между кнопками  */
@@ -296,7 +296,7 @@
   /* Кнопка Удалить */
   .p-user_rates-index .list-lines tr.edit-form form a.remove {
     border-radius: 3px;
-    background-color: darkred;
+    background-color: var(--color-red);
     border-color: currentcolor;
     color: var(--button-text-color);
     line-height: 23px;
@@ -308,20 +308,25 @@
   /* Кнопка Удалить при наведении */
   .p-user_rates-index .list-lines tr.edit-form form a.remove:hover {
     background-color: var(--color-red);
+    opacity: 0.8;
   }
 
   /*---------------------------------------------------------------------------
   ============================= Подвал Списков ================================
   ---------------------------------------------------------------------------*/
   .p-user_rates-index .list-groups .summary.lines {
-    background-color: var(--lists-odd-bg);
+    background-color: var(--lists-even-bg-alt);
     padding: 5px 10px;
     border-radius: 3px;
     display: inline-block;
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: var(--font-size-base-desktop);
+}
   }
 
   .p-user_rates-index .list-groups .summary.lines.library {
-    background-color: var(--lists-even-bg);
+    background-color: var(--lists-even-bg-alt);
     border-top: 0;
     margin: 0;
     display: block;
