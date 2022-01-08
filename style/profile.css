@@ -1,7 +1,7 @@
 /****************************************************************************
 =================================== Profile =================================
 ****************************************************************************/
-@media only screen and (min-width: 725px) {
+@media only screen and (min-width: 915px) {
   .c-brief header.head h1 {
     color: #fff;
   }
@@ -20,7 +20,7 @@
   .profile-actions .fav-add::before,
   .profile-actions .settings::before,
   .profile-actions .ignore-add::before {
-    color: #e1e7f2;
+    color: #eee;
   }
 
   .p-profiles-show .lifetime {
@@ -305,38 +305,6 @@
     border-radius: 2px;
   }
 
-  /* Img & Video Curved Corners */
-  .b-catalog_entry .cover .image-decor img {
-    margin: -2%;
-    width: 104%;
-    max-width: 104%;
-  }
-
-  .image-cutter {
-    width: 98%;
-    height: 98%;
-    display: block;
-    line-height: 0;
-    overflow: hidden;
-    position: relative;
-    border-radius: 2px;
-  }
-
-  .image-decor>.text {
-    border-radius: 0 0 2px 2px;
-    width: 98% !important;
-  }
-
-  .b-db_entry-variant-list_item .image img,
-  .b-image img,
-  .b-video .video-link,
-  .b-db_entry>.c-image img,
-  .p-profiles .profile-head .c-history .entry img,
-  .b-badge img, .b-badge .no-image {
-    border-radius: 2px;
-  }
-
-  /*********************************/
   .p-profiles .l-page header.head.misc {
     overflow: visible;
     margin: -15px -15px 30px;
@@ -391,7 +359,7 @@
     right: 0;
     bottom: 0;
     margin: auto;
-    background-image: url("https://moe.shikimori.one/system/users/x160/42277.png");
+    background-image: url("https://moe.shikimori.one/system/users/x160/var(--user-id).png");
     border-radius: 50%;
   }
 
