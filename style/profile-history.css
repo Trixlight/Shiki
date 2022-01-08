@@ -1,6 +1,7 @@
-/****************************************************************************
+/*---------------------------------------------------------------------------
 ==== Отображение типа (Аниме, Манга или Ранобэ) рядом с пунктами истории ====
-****************************************************************************/
+---------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) {
 .p-user_history-index .history-page a.bubbled-processed:before {
   display: inline-block;
   margin: 0 5px 0 0;
@@ -27,9 +28,9 @@
 .p-user_history-index[data-locale="en"] .history-page a.bubbled-processed[href ^="/m"]:before {content: '(Manga) ';}
 .p-user_history-index[data-locale="en"] .history-page a.bubbled-processed[href ^="/r"]:before {content: '(Ranobe) ';}
 
-/****************************************************************************
+/*---------------------------------------------------------------------------
 ======================== Отображение дат в истории ==========================
-****************************************************************************/
+---------------------------------------------------------------------------*/
 .p-user_history-index .history-page .history-interval p .date::after {
   display: inline-block;
   font-family: var(--font-main);
@@ -128,4 +129,5 @@
 /* Установка формата даты */
 .p-user_history-index .history-page .history-interval p .date::after {
   content: '/ 'var(--HD-day)' 'var(--HD-month)' 'var(--HD-year);
+}
 }

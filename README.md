@@ -39,12 +39,12 @@
 
 ## Прогресс переписывания кода
 - [ ] colors  
-- [ ] fonts 
+- [ ] fonts
 - [ ] main
 - [ ] menu
 - [ ] profile-graphs
 - [x] profile-history
-- [ ] profile-lists
+- [x] profile-lists
 - [ ] profile
 
 

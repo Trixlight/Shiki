@@ -582,176 +582,29 @@ body {
   }
 }
 
-/*==========ФИКСЫ ДЛЯ МОБИЛКИ==========*/
-@media only screen and (min-width: 300px) and (max-width: 1024px) {
-  .x1000 .b-db_entry>.c-about {
-    width: 70.5%;
-  }
+/* USER LIST COLLAPSED */
+.collapsed,
+.p-animes-show .other-names,
+.p-mangas-show .other-names,
+.p-ranobe-show .other-names {
+  margin-bottom: 0;
+  border-radius: 3px;
+  background-color: var(--lists-odd-bg);
+  border-color: var(--lists-even-bg);
+}
 
-  .x1000 .b-db_entry>.c-image {
-    width: 25.5%;
-  }
+.collapsed:hover,
+.p-animes-show .other-names:hover,
+.p-mangas-show .other-names:hover,
+.p-ranobe-show .other-names:hover,
+.collapsed+.spoiler .hide-expanded:hover {
+  background-color: var(--lists-hover);
+  border-color: var(--lists-even-bg);
+  color: var(--text-color);
+}
 
-  .x1000 .b-db_entry>.c-description {
-    margin-left: 29.5%;
-  }
-
-  .x1000 .l-page {
-    margin: 65px 15px 15px;
-  }
-
-  .l-top_menu .menu-mobile {
-    margin: 9px;
-  }
-
-  .l-top_menu .menu-mobile .menu,
-  .l-top_menu .menu-mobile .search {
-    color: #333;
-  }
-
-  .l-top_menu .mobile-menu-toggler.active,
-  .l-top_menu .mobile-search-toggler.active {
-    background: #e8ebef;
-  }
-
-  .l-top_menu .menu-userbox {
-    margin: -5px -20px 0;
-  }
-
-  .l-top_menu .to-mobile-forum {
-    margin: 10px 10px 10px 30px !important;
-    color: #404040;
-  }
-
-  .l-page .menu-toggler {
-    position: fixed;
-    right: 18px;
-    top: 68px;
-  }
-
-  .b-comments-notifier {
-    display: none !important;
-  }
-
-  .l-top_menu .menu-items {
-    right: 5px;
-    width: 220px;
-    position: fixed;
-    top: 50px;
-    background: #fff;
-    padding: 5px;
-    box-shadow: 0px 5px 30px 0 rgba(17, 17, 17, .2);
-  }
-
-  .l-top_menu .menu-items>.entry>a {
-    height: 35px;
-    line-height: 35px;
-    margin-right: 50px;
-    overflow: hidden;
-  }
-
-  .l-top_menu .menu-items>.entry>a:hover,
-  .l-top_menu .menu-items .submenu-toggler:hover,
-  .l-top_menu .inner .sign_out:hover {
-    background: #e8ebef;
-  }
-
-  .l-top_menu .menu-items .submenu-toggler {
-    right: 0;
-    color: #333;
-  }
-
-  .l-top_menu .menu-items .submenu-toggler:before {
-    width: 50px;
-  }
-
-  .l-page .menu-toggler .toggler {
-    padding-bottom: 15px;
-    padding-top: 15px;
-  }
-
-  .l-top_menu .menu-items .submenu-toggler:before {
-    line-height: 32px;
-  }
-
-  .l-page .menu-toggler .toggler:before {
-    display: none;
-  }
-
-  .l-top_menu .menu-items>.entry>.submenu {
-    opacity: 1;
-    visibility: visible;
-    margin-left: 0;
-    padding-left: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  .l-top_menu .entry {
-    border-top: 0;
-  }
-
-  .l-top_menu .menu-items>.entry.calendar>a,
-  .l-top_menu .menu-items>.entry.info>a {
-    padding: 0 10px 0;
-    background-image: none;
-    opacity: 1;
-    margin-left: -10px !important;
-    margin-right: 50px !important;
-  }
-
-  .l-top_menu .menu-items>.entry.info>a:before {
-    color: #333;
-    font-size: 14px !important;
-    opacity: 1;
-    background-color: transparent;
-  }
-
-  .l-top_menu .menu-items>.entry.calendar>a:before,
-  .l-top_menu .menu-items>.entry>.contest::before {
-    visibility: visible;
-  }
-
-  .l-top_menu .inner .sign_out {
-    display: none;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #333;
-  }
-
-  .l-top_menu .menu-search.active {
-    width: 220px !important;
-    top: -34px !important;
-    position: fixed !important;
-    right: 95px !important;
-  }
-
-  .ac_results.menu-suggest {
-    top: 65px !important;
-  }
-
-  .c-lists-info .b-stats_bar:first-child {
-    margin-right: 6px;
-  }
-
-  .c-lists-info .b-stats_bar .stat_names .stat_name a {
-    height: 17px;
-    overflow: hidden;
-    word-break: break-all;
-  }
-
-  .l-top_menu .inner .logo {
-    margin: 0 0 0 20px;
-  }
-
-  .p-dashboards-show .cc-news .c-news_topics {
-    margin-right: 2%;
-    width: 60.667%;
-    overflow: hidden;
-  }
-
-  .b-add_to_list {
-    min-width: auto;
-  }
+.collapsed+.spoiler .hide-expanded {
+  border-radius: 3px;
+  background: var(--lists-odd-bg);
+  border-color: var(--lists-even-bg);
 }

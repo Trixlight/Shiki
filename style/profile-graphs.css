@@ -1,9 +1,8 @@
-/****************************************************************************
-======================= Графики просмотренного в профиле ====================
-****************************************************************************/
+/*---------------------------------------------------------------------------
+================== Круглые графики просмотренного в профиле =================
+---------------------------------------------------------------------------*/
 @media only screen and (min-width: 915px) {
 
-  /* COLORS */
   /* Просмотрено */
   .c-lists-info .b-stats_bar .bar>div.first:before,
   .c-lists-info .b-stats_bar .bar>div.first:after,
@@ -29,7 +28,7 @@
     background-color: var(--color-red);
   }
 
-  /* Дырка в графике указать, transparent для прозрачной дырки */
+  /* Дырка в графике */
   .c-lists-info .b-stats_bar .bar:before {
     background: var(--color-7);
   }
@@ -50,7 +49,7 @@
     display: none
   }
 
-  /*Блок списка*/
+  /* Блок списка */
   .c-lists-info .b-stats_bar .stat_names {
     display: flex;
     position: absolute;
@@ -59,7 +58,7 @@
     flex-direction: column;
   }
 
-  /*Ссылка*/
+  /* Ссылка */
   .c-lists-info .b-stats_bar .stat_names .stat_name a {
     display: inline-block;
     font-size: 12.5px;
@@ -72,7 +71,7 @@
     color: var(--link-hover-color);
   }
 
-  /*Круг цветового индикатора*/
+  /* Круг цветового индикатора */
   .c-lists-info .b-stats_bar .stat_names .stat_name a:before {
     content: "";
     display: inline-block;
