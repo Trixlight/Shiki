@@ -32,14 +32,9 @@
 ****************************************************************************/
 .p-user_history-index .history-page .history-interval p .date::after {
   display: inline-block;
-  vertical-align: middle;
   font-family: var(--font-main);
   font-size: 12.5px;
-  overflow: hidden;
-  position: relative;
-  width: 77px;
   margin-left: 5px;
-  z-index: 1;
 }
 
 /* Установка переменны дней */
