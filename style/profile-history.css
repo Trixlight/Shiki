@@ -33,101 +33,101 @@
 ======================== Отображение дат в истории ==========================
 ---------------------------------------------------------------------------*/
 @media only screen and (min-width: 768px) {
-  .p-user_history-index .history-interval p .date::after {
+  :is(.p-user_history-index, .p-user_history-logs) time.date::after {
     display: inline-block;
     margin-left: 5px;
   }
 
   /* Установка переменны дней */
-  .p-user_history-index .history-interval p .date[datetime*='-01T']::after {--HD-day: '01';}
-  .p-user_history-index .history-interval p .date[datetime*='-02T']::after {--HD-day: '02';}
-  .p-user_history-index .history-interval p .date[datetime*='-03T']::after {--HD-day: '03';}
-  .p-user_history-index .history-interval p .date[datetime*='-04T']::after {--HD-day: '04';}
-  .p-user_history-index .history-interval p .date[datetime*='-05T']::after {--HD-day: '05';}
-  .p-user_history-index .history-interval p .date[datetime*='-06T']::after {--HD-day: '06';}
-  .p-user_history-index .history-interval p .date[datetime*='-07T']::after {--HD-day: '07';}
-  .p-user_history-index .history-interval p .date[datetime*='-08T']::after {--HD-day: '08';}
-  .p-user_history-index .history-interval p .date[datetime*='-09T']::after {--HD-day: '09';}
-  .p-user_history-index .history-interval p .date[datetime*='-10T']::after {--HD-day: '10';}
-  .p-user_history-index .history-interval p .date[datetime*='-11T']::after {--HD-day: '11';}
-  .p-user_history-index .history-interval p .date[datetime*='-12T']::after {--HD-day: '12';}
-  .p-user_history-index .history-interval p .date[datetime*='-13T']::after {--HD-day: '13';}
-  .p-user_history-index .history-interval p .date[datetime*='-14T']::after {--HD-day: '14';}
-  .p-user_history-index .history-interval p .date[datetime*='-15T']::after {--HD-day: '15';}
-  .p-user_history-index .history-interval p .date[datetime*='-16T']::after {--HD-day: '16';}
-  .p-user_history-index .history-interval p .date[datetime*='-17T']::after {--HD-day: '17';}
-  .p-user_history-index .history-interval p .date[datetime*='-18T']::after {--HD-day: '18';}
-  .p-user_history-index .history-interval p .date[datetime*='-19T']::after {--HD-day: '19';}
-  .p-user_history-index .history-interval p .date[datetime*='-20T']::after {--HD-day: '20';}
-  .p-user_history-index .history-interval p .date[datetime*='-21T']::after {--HD-day: '21';}
-  .p-user_history-index .history-interval p .date[datetime*='-22T']::after {--HD-day: '22';}
-  .p-user_history-index .history-interval p .date[datetime*='-23T']::after {--HD-day: '23';}
-  .p-user_history-index .history-interval p .date[datetime*='-24T']::after {--HD-day: '24';}
-  .p-user_history-index .history-interval p .date[datetime*='-25T']::after {--HD-day: '25';}
-  .p-user_history-index .history-interval p .date[datetime*='-26T']::after {--HD-day: '26';}
-  .p-user_history-index .history-interval p .date[datetime*='-27T']::after {--HD-day: '27';}
-  .p-user_history-index .history-interval p .date[datetime*='-28T']::after {--HD-day: '28';}
-  .p-user_history-index .history-interval p .date[datetime*='-29T']::after {--HD-day: '29';}
-  .p-user_history-index .history-interval p .date[datetime*='-30T']::after {--HD-day: '30';}
-  .p-user_history-index .history-interval p .date[datetime*='-31T']::after {--HD-day: '31';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-01T']::after {--HD-day: '01';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-02T']::after {--HD-day: '02';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-03T']::after {--HD-day: '03';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-04T']::after {--HD-day: '04';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-05T']::after {--HD-day: '05';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-06T']::after {--HD-day: '06';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-07T']::after {--HD-day: '07';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-08T']::after {--HD-day: '08';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-09T']::after {--HD-day: '09';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-10T']::after {--HD-day: '10';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-11T']::after {--HD-day: '11';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-12T']::after {--HD-day: '12';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-13T']::after {--HD-day: '13';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-14T']::after {--HD-day: '14';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-15T']::after {--HD-day: '15';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-16T']::after {--HD-day: '16';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-17T']::after {--HD-day: '17';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-18T']::after {--HD-day: '18';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-19T']::after {--HD-day: '19';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-20T']::after {--HD-day: '20';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-21T']::after {--HD-day: '21';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-22T']::after {--HD-day: '22';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-23T']::after {--HD-day: '23';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-24T']::after {--HD-day: '24';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-25T']::after {--HD-day: '25';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-26T']::after {--HD-day: '26';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-27T']::after {--HD-day: '27';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-28T']::after {--HD-day: '28';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-29T']::after {--HD-day: '29';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-30T']::after {--HD-day: '30';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-31T']::after {--HD-day: '31';}
 
   /* Установка имён месяцев на Русском */
-  .p-user_history-index .history-interval p .date[datetime*='-01-']::after {--HD-month: 'янв';}
-  .p-user_history-index .history-interval p .date[datetime*='-02-']::after {--HD-month: 'фев';}
-  .p-user_history-index .history-interval p .date[datetime*='-03-']::after {--HD-month: 'мар';}
-  .p-user_history-index .history-interval p .date[datetime*='-04-']::after {--HD-month: 'апр';}
-  .p-user_history-index .history-interval p .date[datetime*='-05-']::after {--HD-month: 'май';}
-  .p-user_history-index .history-interval p .date[datetime*='-06-']::after {--HD-month: 'июн';}
-  .p-user_history-index .history-interval p .date[datetime*='-07-']::after {--HD-month: 'июл';}
-  .p-user_history-index .history-interval p .date[datetime*='-08-']::after {--HD-month: 'авг';}
-  .p-user_history-index .history-interval p .date[datetime*='-09-']::after {--HD-month: 'сен';}
-  .p-user_history-index .history-interval p .date[datetime*='-10-']::after {--HD-month: 'окт';}
-  .p-user_history-index .history-interval p .date[datetime*='-11-']::after {--HD-month: 'ноя';}
-  .p-user_history-index .history-interval p .date[datetime*='-12-']::after {--HD-month: 'дек';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-01-']::after {--HD-month: 'янв';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-02-']::after {--HD-month: 'фев';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-03-']::after {--HD-month: 'мар';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-04-']::after {--HD-month: 'апр';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-05-']::after {--HD-month: 'май';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-06-']::after {--HD-month: 'июн';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-07-']::after {--HD-month: 'июл';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-08-']::after {--HD-month: 'авг';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-09-']::after {--HD-month: 'сен';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-10-']::after {--HD-month: 'окт';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-11-']::after {--HD-month: 'ноя';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='-12-']::after {--HD-month: 'дек';}
 
   /* Установка имён месяцев на Английском */
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-01-']::after {--HD-month: 'jan';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-02-']::after {--HD-month: 'feb';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-03-']::after {--HD-month: 'mar';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-04-']::after {--HD-month: 'apr';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-05-']::after {--HD-month: 'may';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-06-']::after {--HD-month: 'jun';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-07-']::after {--HD-month: 'jul';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-08-']::after {--HD-month: 'aug';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-09-']::after {--HD-month: 'sep';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-10-']::after {--HD-month: 'okt';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-11-']::after {--HD-month: 'nov';}
-  .p-user_history-index[data-locale="en"] .history-interval p .date[datetime*='-12-']::after {--HD-month: 'dec';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-01-']::after {--HD-month: 'jan';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-02-']::after {--HD-month: 'feb';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-03-']::after {--HD-month: 'mar';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-04-']::after {--HD-month: 'apr';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-05-']::after {--HD-month: 'may';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-06-']::after {--HD-month: 'jun';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-07-']::after {--HD-month: 'jul';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-08-']::after {--HD-month: 'aug';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-09-']::after {--HD-month: 'sep';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-10-']::after {--HD-month: 'okt';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-11-']::after {--HD-month: 'nov';}
+  :is(.p-user_history-index, .p-user_history-logs)[data-locale="en"] time.date[datetime*='-12-']::after {--HD-month: 'dec';}
 
   /* Установка перемены лет */
-  .p-user_history-index .history-interval p .date[datetime*='2011-']::after {--HD-year: '2011';}
-  .p-user_history-index .history-interval p .date[datetime*='2012-']::after {--HD-year: '2012';}
-  .p-user_history-index .history-interval p .date[datetime*='2013-']::after {--HD-year: '2013';}
-  .p-user_history-index .history-interval p .date[datetime*='2014-']::after {--HD-year: '2014';}
-  .p-user_history-index .history-interval p .date[datetime*='2015-']::after {--HD-year: '2015';}
-  .p-user_history-index .history-interval p .date[datetime*='2016-']::after {--HD-year: '2016';}
-  .p-user_history-index .history-interval p .date[datetime*='2017-']::after {--HD-year: '2017';}
-  .p-user_history-index .history-interval p .date[datetime*='2018-']::after {--HD-year: '2018';}
-  .p-user_history-index .history-interval p .date[datetime*='2019-']::after {--HD-year: '2019';}
-  .p-user_history-index .history-interval p .date[datetime*='2020-']::after {--HD-year: '2020';}
-  .p-user_history-index .history-interval p .date[datetime*='2021-']::after {--HD-year: '2021';}
-  .p-user_history-index .history-interval p .date[datetime*='2022-']::after {--HD-year: '2022';}
-  .p-user_history-index .history-interval p .date[datetime*='2023-']::after {--HD-year: '2023';}
-  .p-user_history-index .history-interval p .date[datetime*='2024-']::after {--HD-year: '2024';}
-  .p-user_history-index .history-interval p .date[datetime*='2025-']::after {--HD-year: '2025';}
-  .p-user_history-index .history-interval p .date[datetime*='2026-']::after {--HD-year: '2026';}
-  .p-user_history-index .history-interval p .date[datetime*='2027-']::after {--HD-year: '2027';}
-  .p-user_history-index .history-interval p .date[datetime*='2028-']::after {--HD-year: '2028';}
-  .p-user_history-index .history-interval p .date[datetime*='2029-']::after {--HD-year: '2029';}
-  .p-user_history-index .history-interval p .date[datetime*='2030-']::after {--HD-year: '2030';}
-  .p-user_history-index .history-interval p .date[datetime*='2031-']::after {--HD-year: '2031';}
-  .p-user_history-index .history-interval p .date[datetime*='2032-']::after {--HD-year: '2032';}
-  .p-user_history-index .history-interval p .date[datetime*='2033-']::after {--HD-year: '2033';}
-  .p-user_history-index .history-interval p .date[datetime*='2034-']::after {--HD-year: '2034';}
-  .p-user_history-index .history-interval p .date[datetime*='2035-']::after {--HD-year: '2035';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2011-']::after {--HD-year: '2011';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2012-']::after {--HD-year: '2012';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2013-']::after {--HD-year: '2013';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2014-']::after {--HD-year: '2014';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2015-']::after {--HD-year: '2015';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2016-']::after {--HD-year: '2016';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2017-']::after {--HD-year: '2017';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2018-']::after {--HD-year: '2018';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2019-']::after {--HD-year: '2019';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2020-']::after {--HD-year: '2020';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2021-']::after {--HD-year: '2021';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2022-']::after {--HD-year: '2022';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2023-']::after {--HD-year: '2023';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2024-']::after {--HD-year: '2024';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2025-']::after {--HD-year: '2025';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2026-']::after {--HD-year: '2026';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2027-']::after {--HD-year: '2027';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2028-']::after {--HD-year: '2028';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2029-']::after {--HD-year: '2029';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2030-']::after {--HD-year: '2030';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2031-']::after {--HD-year: '2031';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2032-']::after {--HD-year: '2032';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2033-']::after {--HD-year: '2033';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2034-']::after {--HD-year: '2034';}
+  :is(.p-user_history-index, .p-user_history-logs) time.date[datetime*='2035-']::after {--HD-year: '2035';}
 
   /* Установка формата даты */
-  .p-user_history-index .history-interval p .date::after {
+  :is(.p-user_history-index, .p-user_history-logs) time.date::after {
     content: '/ 'var(--HD-day)' 'var(--HD-month)' 'var(--HD-year);
   }
 }
