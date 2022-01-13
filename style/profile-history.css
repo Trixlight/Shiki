@@ -2,6 +2,7 @@
 ** Отображение типа (Аниме/Манга/Ранобэ) рядом с пунктами истории
 ** на страницах профиля "История" и "Логи"
 -----------------------------------------------------------------------------*/
+@media {}
 @media only screen and (min-width: 768px) {
   :is(.p-user_history-index, .p-user_history-logs) a.bubbled-processed:before {
     display: inline-block;
