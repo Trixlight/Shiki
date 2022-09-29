@@ -553,7 +553,7 @@ body {
     color: black !important;
     line-height: 1 !important;
     list-style: image inside;
-    list-style-image: url("https://trixlight.github.io/Shiki-Enhanced/resources/check.svg") !important;
+    list-style-image: url("https://raw.githubusercontent.com/Trixlight/Shiki-Enhanced/main/resources/check.svg") !important;
     list-style-position: inside !important;
     top: 0 !important;
     left: 0 !important;
