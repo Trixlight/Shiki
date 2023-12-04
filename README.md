@@ -14,15 +14,15 @@
 ```css
 /** Фоны для Светлой темы **/
 :root {
-  --site-bg: url("https://i.vgy.me/LRi1Vl.png"); /* Фон сайта 1920x1080 */
-  --profile-head-bg: url("https://i.vgy.me/BCgcCC.jpg"); /* Фон обложки профиля 1200x250 */
+  --site-bg: url("https://raw.githubusercontent.com/Trixlight/Shiki-Enhanced/main/img/LRi1Vl.png"); /* Фон сайта 1920x1080 */
+  --profile-head-bg: url("https://raw.githubusercontent.com/Trixlight/Shiki-Enhanced/main/img/BCgcCC.jpg"); /* Фон обложки профиля 1200x250 */
 }
 
 /** Фоны для Тёмной темы **/
 @media (prefers-color-scheme: dark) {
   :root {
-  	--site-bg: url("https://i.vgy.me/QtJnyX.jpg"); /* Фон сайта 1920x1080 */
-  	--profile-head-bg: url("https://i.vgy.me/Ukcgch.jpg"); /* Фон обложки профиля 1200x250 */
+  	--site-bg: url("https://raw.githubusercontent.com/Trixlight/Shiki-Enhanced/main/img/QtJnyX.jpg"); /* Фон сайта 1920x1080 */
+  	--profile-head-bg: url("https://raw.githubusercontent.com/Trixlight/Shiki-Enhanced/main/img/Ukcgch.jpg"); /* Фон обложки профиля 1200x250 */
 	}
 }
 
