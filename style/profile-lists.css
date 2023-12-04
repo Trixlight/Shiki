@@ -149,7 +149,7 @@
   /* Расстояние между элементами в таблице */
   .p-user_rates-index .list-lines {
     border-collapse: separate;
-    border-spacing: 0 5px;
+    border-spacing: 0 2px;
     table-layout: fixed;
   }
 
