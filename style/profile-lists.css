@@ -2,6 +2,7 @@
 ======================== Переход по спискам и Поиск =========================
 ---------------------------------------------------------------------------*/
 @media {}
+
 @media only screen and (min-width: 768px) {
 
   /* Скрываем стандартный заголовок Поиска */
@@ -226,7 +227,7 @@
 
   .p-user_rates-index .list-lines tr .name {
     padding: 3px 10px;
-    width: auto;
+    width: 100%;
   }
 
   .p-user_rates-index .list-lines tr .name a {
@@ -321,27 +322,27 @@
     color: var(--text-color);
     font-family: var(--font-main);
     font-size: var(--font-size-base-desktop);
+  }
 }
-  }
 
-  .p-user_rates-index .list-groups .summary.lines.library {
-    background-color: var(--lists-even-bg-alt);
-    border-top: 0;
-    margin: 0;
-    display: block;
-  }
+.p-user_rates-index .list-groups .summary.lines.library {
+  background-color: var(--lists-even-bg-alt);
+  border-top: 0;
+  margin: 0;
+  display: block;
+}
 
-  /*---------------------------------------------------------------------------
+/*---------------------------------------------------------------------------
   ========================= Правая колонка Списков ============================
   ---------------------------------------------------------------------------*/
-  .p-user_rates-index .b-block_list li {
-    font-family: var(--font-main);
-    margin: 1px 0;
-    padding: 2px 5px;
-    border-radius: 3px;
-  }
+.p-user_rates-index .b-block_list li {
+  font-family: var(--font-main);
+  margin: 1px 0;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
 
-  .p-user_rates-index .b-block_list li span {
-    margin-top: -3px;
-  }
+.p-user_rates-index .b-block_list li span {
+  margin-top: -3px;
+}
 }
