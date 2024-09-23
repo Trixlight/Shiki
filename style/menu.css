@@ -5,6 +5,7 @@
   position: sticky;
   top: 0;
   background-color: #242627;
+  padding: 0 15px;
 }
 
 .l-top_menu-v2 .global-search {
@@ -89,7 +90,43 @@ l-top_menu-v2 .global-search .search-results .nothing_found,
 
 .l-top_menu-v2.is-search-shade .search-results,
 .l-top_menu-v2 .submenu {
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 5px 5px;
+}
+
+.l-top_menu-v2 .menu-dropdown>span a,
+.l-top_menu-v2 .menu-dropdown>span,
+.l-top_menu-v2 .menu-dropdown.profile {
+  border-radius: 5px;
+  height: calc(var(--top-menu-height) - 8px);
+}
+
+.l-top_menu-v2 .submenu {
+  margin-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+}
+
+.l-top_menu-v2 .menu-icon.search.mobile {
+  border-radius: 5px;
+  height: calc(var(--top-menu-height) - 8px);
+  margin-right: 5px;
+}
+
+.l-top_menu-v2 .menu-icon.search::before {
+  line-height: calc(var(--top-menu-height) - 8px);
+}
+
+.l-top_menu-v2 .submenu>a {
+  margin: 0 3px !important;
+  border-radius: 3px;
+}
+
+.l-top_menu-v2 .submenu>.legend {
+  padding: 0 15px;
+}
+
+.l-top_menu-v2 a:not(.icon-anime, .icon-manga, .icon-ranobe)::before {
+  width: 40px !important;
 }
 
 /* Search Results Dim */
