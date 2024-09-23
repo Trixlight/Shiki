@@ -141,7 +141,7 @@ l-top_menu-v2 .global-search .search-results .nothing_found,
 /* Submenu Hover */
 .l-top_menu-v2 .submenu>a:hover {
   background: #61666d;
-  color: var(--text-color-dim);
+  color: #fff;
 }
 
 /* Hide Forum Icon */
