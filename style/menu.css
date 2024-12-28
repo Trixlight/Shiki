@@ -139,6 +139,10 @@ l-top_menu-v2 .global-search .search-results .nothing_found,
   width: 40px !important;
 }
 
+.l-top_menu-v2 .submenu>a.icon-mail span.unread span:not(:last-child)::after {
+  background-color: #ece8e2;
+}
+
 /* Search Results Dim */
 .l-top_menu-v2 .global-search .search-results::before {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, var(--page-color) 100%);
