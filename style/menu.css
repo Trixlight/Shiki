@@ -106,6 +106,16 @@ l-top_menu-v2 .global-search .search-results .nothing_found,
   border-radius: 5px;
 }
 
+.l-top_menu-v2 .menu-icon.mail {
+  border-radius: 5px;
+  height: calc(var(--top-menu-height) - 8px);
+  margin-right: 5px;
+}
+
+.l-top_menu-v2 .menu-icon.mail::before {
+  width: auto !important;
+}
+
 .l-top_menu-v2 .menu-icon.search.mobile {
   border-radius: 5px;
   height: calc(var(--top-menu-height) - 8px);
