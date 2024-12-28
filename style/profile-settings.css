@@ -2,6 +2,7 @@
 ================================== Настройки ================================
 ---------------------------------------------------------------------------*/
 @media {}
+
 @media only screen and (min-width: 768px) {
 
   /* Содержимое страницы */
@@ -41,11 +42,15 @@
   /* Цвет ссылок при наведении */
   .p-profiles-edit .b-options-floated a:hover {
     color: var(--link-hover-color);
+    background-color: #e8ebef7a;
+    text-decoration: none;
   }
 
   /* Цвет активной ссылки */
   .p-profiles-edit .b-options-floated a.selected {
     color: var(--link-active-color);
+    background-color: #c3c6ca;
+    text-decoration: none;
   }
 
   /* Скрываем стандартный разделитель "/" */
