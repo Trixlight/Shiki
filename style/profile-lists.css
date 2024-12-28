@@ -264,6 +264,10 @@
     font-size: inherit;
   }
 
+  .p-user_rates-index .list-lines tr td .rewatches {
+    color: rgb(213, 196, 47);
+  }
+
   .p-user_rates-index .list-lines tr td .rate-text {
     color: var(--text-color-faint);
     font-size: var(--font-size-base-desktop);
