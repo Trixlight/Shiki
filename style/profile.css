@@ -2,6 +2,7 @@
 =================================== Profile =================================
 ****************************************************************************/
 @media {}
+
 @media only screen and (min-width: 915px) {
   .c-brief header.head h1 {
     color: #fff;
@@ -38,6 +39,9 @@
     top: 190px;
     right: 15px;
     z-index: 10;
+    background: #333;
+    border-radius: 8px;
+    padding: 5px;
   }
 
   .p-profiles .profile-head .c-brief .notice {
@@ -373,7 +377,7 @@
   }
 
   /* Блок Достижений */
-  .p-profiles .achievements .cc-3 > .c-column {
+  .p-profiles .achievements .cc-3>.c-column {
     margin-bottom: 0;
   }
 }
