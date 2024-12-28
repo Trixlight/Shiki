@@ -95,7 +95,8 @@ l-top_menu-v2 .global-search .search-results .nothing_found,
 
 .l-top_menu-v2 .menu-dropdown>span a,
 .l-top_menu-v2 .menu-dropdown>span,
-.l-top_menu-v2 .menu-dropdown.profile {
+.l-top_menu-v2 .menu-dropdown.profile,
+.l-top_menu-v2 .menu-icon.sign_in {
   border-radius: 5px;
   height: calc(var(--top-menu-height) - 8px);
 }
